@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Android优秀开源项目【持续更新】
+summary: 一直想找些Android经典的开源项目学习一下，大健发现了这么一篇帖子，不少好东西，分享在此。希望能够对Android开发的同学有所帮助。感谢作者的整理和分享。
 categories:
 - android
 tags:

@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>扫雷</title>
+	<style type="text/css">
+	body{background-color:#eee;}
+	div.l{float:left;width:280px;margin-right:15px;}
+	ul{list-style:none;margin:0;padding:0;background-color:#eee;}
+	li{margin:8px;}
+	label{margin-right:10px;}
+	dl{font-size:12px;margin-top:20px;}
+	dd{margin:5px 10px;}
+	#desc{clear:both;padding:20px 0;}
+
+	/* 雷区样式定义 */
+	#canvas.mines{display:inline-block;*display:inline;*zoom:1;border-width:3px;border-style:solid;border-color:#999 #fff #fff #999;}
+	#canvas a{display:block;float:left;width:25px;height:25px;text-decoration:none;text-align:center;font-weight:bold;font-size:110%;line-height:25px;cursor:default;border-width:2px;border-style:solid;border-color:#fff #999 #999 #fff;background-color:#ccc; }
+	#canvas a:active,
+	#canvas .ok,
+	#canvas .flag{border-color:#999 #ccc #ccc #999;}
+
+	</style>
+</head>
+<body>
+	<h2>扫雷</h2>
+
+	<!--操作-->
+	<div class="l">
+		<ul id="options">
+			<li><label>行数：</label><input id="row" name="" type="text" value="10"/></li>
+			<li><label>列数：</label><input id="col" name="" type="text" value="10"/></li>
+			<li><label>雷数：</label><input id="mine" name="" type="text" value="20"/></li>
+			<li><input type="button" value="开局" id="begin" /></li>
+		</ul>
+
+		<dl>
+			<dt>玩法：</dt>
+			<dd>1. 左键单击显示结果，右键标记小旗</dd>
+			<dd>2. 会自动弹出结果，如果没有结果，说明有些标记是错误的</dd>
+			<dd>3. 点击按钮“开局”会重新开始一局</dd>
+		</dl>
+	</div>
+
+	<!--实际操作区域-->
+	<div id="canvas"></div>
+
+	
+	<div id="desc">
+		<pre>
+扫雷算法概述
+========
+
+###数据###
+
+对整个雷区的操作就是对一个 row*col 大小的数组的操作，每个小区块对应数组中的一项，发生在小区块上的操作都是对数组中与之对应项的改变。
+
+数组标识的每个雷区有两个属性：value 和 status。
+
+* value 记录该区块的内容，分三种：空（0）、雷（-1）、提示数字（提示的数值）
+* status 记录该区块的状态，分三种：隐藏（0）、打开（1）、标旗（2）
+
+页面中的小区块，只存储在数组中的坐标值，方便在响应操作时找到数组中对应的项。
+
+
+###逻辑###
+
+**布雷**
+
+初始不用生成空的 row*col 大小的“二维数组”，只在需要用到其中某个元素时，再赋予这个元素值
+
+1. 随机一个row*col范围内的坐标作为雷，以该坐标通过固定算法组合成一个key
+2. 检查临时存数的map中是否有该key，如果有重复上面步骤，否则存入map中
+3. 为该坐标元素赋值其value属性为雷（即-1）
+4. 以得到的坐标为中心，遍历它周围的区块，如果是value属性不是雷，则累加1
+5. 重复上面步骤，直到指定数目的雷全部确定
+
+这样雷区对应的数组矩阵就生成好了，数组中没有值的对应到雷区上是空的。利用该数组生成雷区。
+
+**检查结果**
+
+点击任何一项时，如果踩到了雷，需要爆炸显示所有结果；如果不是雷，那么就都要检查是否成功。
+
+遍历数组中的每一项，遇到尚在隐藏的，或者虽然标旗并且其实际不是雷，则没有成功。
+
+		</pre>
+	</div>
+
+
+	<script type="text/javascript" src="/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript">
+	/*
+		Class MineSweeper
+			generateMetricsData() ------ 根据行列雷数生成随机矩阵雷区
+		    isWin() -------------------- 是否获胜
+			setCellData(i, j, v) ------- 设置某个区块内容值
+			getCellData(i, j) ---------- 得到某个区块内容值
+			getMetricsData() ----------- 得到所有雷区矩阵数据
+
+			_init()
+			updateValueOfMineAround(i, j) 更新雷周围区域的计数
+			showAroundEmpty(i, j)         显示空块周围区域的空块
+			showResult()                  显示结果
+			drawMineArea()                绘制雷区
+			onMousedown(evt)              处理点击事件
+	*/
+
+	/**
+	 * @constructor
+	 *
+	 * 1. 在 row*col 的区域内随机布置指定的雷数
+	 * 2. 每随机生成一个雷的位置，遍历周边8个区域，累加周边的提示数值
+	 * 3. 绘制矩阵，监视每个雷区的左右点击事件
+	 */
+	var MineSweeper = function (config) {
+		$.extend(this,
+			{
+				'container':  '#canvas', // 雷区容器
+				'row':		  10,        // 要布置的雷区的行数
+				'col':        10,        // 要布置的雷区的列数
+				'mineNumber': 20,        // 雷区中的雷的数量
+				'openClass':  'ok',      // 打开的区块要添加的类名
+				'flagClass':  'flag'     // 插旗标的区块要添加的类名
+			},
+			config);
+
+		this._init();
+	};
+	MineSweeper.VALUE_MINE   = -1; // 区块中是雷
+	MineSweeper.VALUE_NULL   = 0;  // 区块为空
+	MineSweeper.STATUS_CLOSE = 0;  // 区块的状态是“未打开”
+	MineSweeper.STATUS_OPEN  = 1;  // 区块的状态是“已打开”
+	MineSweeper.STATUS_FLAG  = 2;  // 区块的状态是“插旗标”
+
+	/**
+	 * 初始化
+	 */
+	MineSweeper.prototype._init = function () {
+		// 检测雷数比例
+		if (this.mineNumber / (this.row * this.col) > 0.8) {
+			alert('80%以上的区域都是雷。\n雷数太多了！');
+			return;
+		}
+
+		this.container = $(this.container);
+		
+		// 生成雷区对应的矩阵
+		this.generateMetricsData();
+		
+		// 用矩阵绘制
+		this.drawMineArea(this.getMetricsData());
+
+		// 注册事件
+		this.container
+			.undelegate()
+			.delegate('a', 'click contextmenu', $.proxy(this.onMousedown, this));
+	};
+
+	/**
+	 * 点击事件
+	 */
+	MineSweeper.prototype.onMousedown = function (evt) {
+		var target = $(evt.currentTarget),
+			pos = target.data('index').split(','),
+			i = pos[0] - 0,
+			j = pos[1] - 0,
+			v = this.getCellData(i, j),
+			isOver;
+
+		switch (evt.type) {
+		// 左键点击
+		case 'click':
+			// 空
+			if (v.value === MineSweeper.VALUE_NULL) {
+				this.showAroundEmpty(i, j);
+			}
+			else {
+				this.setCellData(i, j, {'status': MineSweeper.STATUS_OPEN});
+				target.addClass(this.openClass);
+
+				// 数字
+				if (v.value > MineSweeper.VALUE_NULL) {
+					target.text(v.value);
+				}
+				// 雷
+				else {
+					this.showResult();
+					isOver = true;
+					alert('Boom!!! :(');
+				}
+			}
+			
+			break;
+		// 右键点击
+		case 'contextmenu':
+			if (v.status === MineSweeper.STATUS_FLAG) {
+				target.text('').removeClass(this.flagClass);
+				this.setCellData(i, j, {'status': MineSweeper.STATUS_CLOSE});
+			}
+			else {
+				this.setCellData(i, j, {'status': MineSweeper.STATUS_FLAG});
+				target.html('&#9873;').addClass(this.flagClass);
+			}
+			break;
+		}
+
+		// 检查是否胜利
+		if (!isOver && this.isWin()) {
+			alert('Congratulations!');
+		}
+
+		evt.preventDefault();
+		evt.stopPropagation();
+	};
+
+	/**
+	 * 绘制初始雷区地图
+	 */
+	MineSweeper.prototype.drawMineArea = function (metrics) {
+		var rows = [], cols = [],
+			i, j, v;
+
+		for (i = 0; i < this.row; i++) {
+			for (j = 0; j < this.col; j++) {
+				cols.push('<a href="#" data-index="' + i + ',' + j + '"></a>');
+			}
+			rows.push(cols.join(''));
+			cols = [];
+		}
+
+		this.container.html(rows.join('<br/>'));
+	};
+
+	/**
+	 * 生成矩阵数据
+	 */
+	MineSweeper.prototype.generateMetricsData = function () {
+		var row = this.row, col = this.col, mineNum = this.mineNumber,
+
+			mineMap = {},
+			mineMapKey,
+			i, j, mineRow, mineCol;
+		
+		// 随机排布雷
+		//   1. 行列分别随机一个数作为雷的坐标值
+		//   2. 将坐标值组合成“row,col”作为key值存储到map
+		//   3. 如果map中已经有了这个key值的定义，则重新随机坐标值
+		//   4. 重复上面步骤，直到坐标是非重复的
+		//   5. 得到一个雷的位置后，遍历周围8个位置，每个位置累加计数1
+		for (i = 0; i < mineNum; i++) {
+			do {
+				mineRow = Math.round(Math.random() * (row - 1));
+				mineCol = Math.round(Math.random() * (col - 1));
+				mineMapKey = mineRow + ',' + mineCol;
+			} while (mineMap[mineMapKey]);
+			mineMap[mineMapKey] = true;
+
+			this.setCellData(mineRow, mineCol, {'value': MineSweeper.VALUE_MINE});
+
+			// 周围元素累加雷数
+			this.updateValueOfMineAround(mineRow, mineCol);
+		}
+	};
+
+	/**
+	 * 设置一个区域内容
+	 * @param {Number} i 行坐标
+	 * @param {Number} j 纵坐标
+	 * @param {Object} v 设置的值
+	 */
+	MineSweeper.prototype.setCellData = function (i, j, v) {
+		var data = this.getCellData(i, j);
+
+		$.extend(data, v);
+	};
+	/**
+	 * 得到一个元素的值
+	 * @param {Number} i 行坐标
+	 * @param {Number} j 纵坐标
+	 * @return {Object} 区块的值信息
+	 */
+	MineSweeper.prototype.getCellData = function (i, j) {
+		var data = this.getMetricsData();
+		
+		data[i] = data[i] || [];
+		data[i][j] = data[i][j] ||
+					{
+						'status': MineSweeper.STATUS_CLOSE,
+						'value':  MineSweeper.VALUE_NULL
+					};
+
+		return data[i][j];
+	};
+
+	/**
+	 * 得到矩阵数组
+	 * @return {Array} 矩阵数据数组
+	 */
+	MineSweeper.prototype.getMetricsData = function () {
+		this.metricsData = this.metricsData || [];
+		return this.metricsData;
+	};
+	
+	/**
+	 * 更新雷元素周围的数据
+	 * @param {Number} i 雷所在位置的行坐标
+	 * @param {Number} j 雷所在位置的列坐标
+	 */
+	MineSweeper.prototype.updateValueOfMineAround = function (i, j) {
+		var testArr = [],
+			me = this,
+			add = function (i, j) { // 这里面this为window
+				if (i >= 0 && i < me.row &&
+					j >= 0 && j < me.col) {
+					testArr.push([i,j]);
+				}
+			};
+		
+		// 探测周围8个元素
+		add(i - 1, j - 1);
+		add(i - 1, j);
+		add(i - 1, j + 1);
+
+		add(i, j - 1);
+		add(i, j + 1);
+
+		add(i + 1, j - 1);
+		add(i + 1, j);
+		add(i + 1, j + 1);
+
+		// 把可用的累加1
+		$.each(testArr, function (i, val) {
+			var x = val[0],
+				y = val[1],
+				v = me.getCellData(x, y).value;
+
+			if (v >= 0) {
+				me.setCellData(x, y, {'value': v + 1});	
+			}
+		});
+	};
+
+	/**
+	 * 显示周围的空格
+	 * @param {Number} i 区块行坐标
+	 * @param {Number} j 区块纵坐标
+	 */
+	MineSweeper.prototype.showAroundEmpty = function (i, j) {
+		if (i < 0 || i >= this.row ||
+			j < 0 || j >= this.col) {
+			return;
+		}
+
+		var cur = this.getCellData(i, j),
+			data,
+			target;
+
+		if (cur.value === MineSweeper.VALUE_NULL &&
+			cur.status === MineSweeper.STATUS_CLOSE) {
+			// 处理当前元素
+			this.setCellData(i, j, {'status': MineSweeper.STATUS_OPEN});
+
+			target = this.container.find('a:eq(' + (i * this.col + j) + ')');
+			target.addClass(this.openClass).text('');
+
+			// 处理周边元素，四角上的元素不予考虑
+			this.showAroundEmpty(i - 1, j);
+			this.showAroundEmpty(i, j - 1);
+			this.showAroundEmpty(i, j + 1);
+			this.showAroundEmpty(i + 1, j);
+		}
+	};
+
+	/**
+	 * 显示结果
+	 */
+	MineSweeper.prototype.showResult = function () {
+		var me = this;
+
+		this.container.find('a').each(function () {
+			var target = $(this),
+				pos = target.data('index').split(','),
+				i = pos[0] - 0,
+				j = pos[1] - 0,
+				v = me.getCellData(i, j);
+			
+			target.addClass(this.openClass);
+			if (v.value >= 0) {
+				target.text(v.value ? v.value : '');
+			}
+			else {
+				target.html('&#10041;');
+			}
+
+		});
+	};
+
+	/**
+	 * 检查棋盘是否已经获胜
+	 * @return {Boolean} allRight 获胜结果
+	 */
+	MineSweeper.prototype.isWin = function () {
+		var allRight = true,
+			data = this.getMetricsData(),
+			i, j, cell;
+
+		// 是否全部标记结束，且标旗者为雷
+		for (i = 0; i < this.row; i++) {
+			if (allRight) {
+				for (j = 0; j < this.col; j++) {
+					cell = this.getCellData(i, j);
+					if (cell.status === MineSweeper.STATUS_CLOSE || // 尚有未显示的项
+						(cell.status === MineSweeper.STATUS_FLAG &&
+						 cell.value !== MineSweeper.VALUE_MINE)) { // 标示为旗，但是实际不是雷
+						allRight = false;
+						break;
+					}
+				}
+			}
+		}
+
+		return allRight;
+	};
+
+
+
+
+	/*************************
+	---页面按钮事件绑定---
+	*************************/
+	$('#begin').click(function (e) {
+		var m = new MineSweeper(
+			{
+				'row': $('#row').val() - 0 || 10,
+				'col': $('#col').val() - 0 || 10,
+				'mineNumber': $('#mine').val() - 0 || 30
+			}
+		);
+		$('#canvas').addClass('mines');
+		
+		e.preventDefault();
+	});
+
+	</script>
+</body>
+</html>

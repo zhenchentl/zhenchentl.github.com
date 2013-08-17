@@ -27,9 +27,8 @@ tags:
 
 然后就有easy_install了
 
-{% highlight python linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
+    {% highlight python linenos %}
+    def foo
+      puts 'foo'
+    end
+    {% endhighlight %}

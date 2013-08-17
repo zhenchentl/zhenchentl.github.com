@@ -19,7 +19,7 @@ tags:
 
 然后解压进到其目录里
 
-`C:\python32\python setup.py install`
+	C:\python32\python setup.py install
 
 因为多版本的问题 我没有将python3放入PATH
 
@@ -27,8 +27,10 @@ tags:
 
 然后就有easy_install了
 
-    {% highlight python linenos %}
-    def foo
-      puts 'foo'
-    end
-    {% endhighlight %}
+    {% highlight java %}
+	public class HelloWorld {
+    public static void main(String args[]) {
+      System.out.println("Hello World!");
+    }
+	}
+	{% endhighlight %}

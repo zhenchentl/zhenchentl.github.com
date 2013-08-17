@@ -19,13 +19,13 @@ tags:
 
 然后解压进到其目录里
 
-	C:\python32\python setup.py install
+	C:\python32\python setup.py install   
 
 因为多版本的问题 我没有将python3放入PATH
 
 如果放入了就不用输入前边的路径了
 
-然后就有easy_install了
+然后就有easy_install了。
 
     {% highlight java %}
 	public class HelloWorld {

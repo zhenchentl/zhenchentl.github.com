@@ -13,9 +13,15 @@ time{font-size:13px;color:#999;}
 a, a code{color:#08c;text-decoration:none;}
 a:hover{color:#1982d1;text-decoration:underline;}
 code{font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-	padding:1px 4px;background-color:#f9f9f9;border:1px solid #e8e8e8;
+	padding:1px 4px;background-color:#f8f8f8;border:1px solid #e8e8e8;
 	border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;}
-pre code{line-height:100%;background:none;border:none;}
+pre{background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;}
 h1{font-size:2em;margin:0.8em 0;}
 h2{font-size:1.6em;margin:0.5em 0;}
 h3{font-size:1.3em;margin:0.2em 0;}

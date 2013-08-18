@@ -26,11 +26,3 @@ tags:
 如果放入了就不用输入前边的路径了
 
 然后就有easy_install了。
-
-    {% highlight java %}
-	public class HelloWorld {
-    public static void main(String args[]) {
-      System.out.println("Hello World!");
-    }
-	}
-	{% endhighlight %}

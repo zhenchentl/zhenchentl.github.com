@@ -6,8 +6,6 @@ categories:
 - else
 tags:
 - blog
-- jekyll
-- code highlight
 ---
 
 {{ page.title }}

@@ -6,6 +6,7 @@ categories:
 - else
 tags:
 - blog
+- test
 ---
 
 {{ page.title }}

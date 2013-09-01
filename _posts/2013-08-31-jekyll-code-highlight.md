@@ -6,7 +6,8 @@ categories:
 - else
 tags:
 - blog
-- test
+- jekyll
+- code highlight
 ---
 
 {{ page.title }}
@@ -18,3 +19,7 @@ tags:
 - Pygments
 
 jek的代码高亮是使用[Pygments][2]来完成的，它是一款语法高亮的[Python][1]包，所以我们首先需要下载并安装Python。可用如下命令检测是否有Python环境：
+
+	python --version   
+	\# Python 2.7.3
+

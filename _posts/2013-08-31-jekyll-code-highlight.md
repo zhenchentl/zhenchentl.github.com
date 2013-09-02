@@ -35,7 +35,3 @@ jek的代码高亮是使用[Pygments][2]来完成的，它是一款语法高亮�
 	pygmentize -S fruity -f html > syntax.css
 
 然后，在博客中使用代码高亮，高亮代码的模板是这样的：
-
-	{% highlight 词法分析器 %}
-	需要高亮的代码
-	{% endhighlight %}

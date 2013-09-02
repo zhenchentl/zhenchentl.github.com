@@ -9,7 +9,6 @@ tags:
 - 学习
 ---
 
-=================
 初学git的时候，看了不少的教程，有网上Google的，也有买的书。但是不是琐碎的难以忍受，就是简单的不明所以。很少有个适合初学者由浅入深的实用教程。后来发现了这么个教程，很是应心！
 ###什么是git（引自维基百科）  
 Git是一个分布式[版本控制](http://zh.wikipedia.org/wiki/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6)／[软件配置管理](http://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86)软件，原来是linux内核开发者[林纳斯·托瓦兹](http://zh.wikipedia.org/wiki/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%89%98%E7%93%A6%E5%85%B9)（Linus Torvalds）为了更好地管理[linux内核](http://zh.wikipedia.org/wiki/Linux%E5%86%85%E6%A0%B8)开发而创立的。   

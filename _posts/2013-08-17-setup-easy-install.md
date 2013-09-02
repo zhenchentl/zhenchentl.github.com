@@ -9,7 +9,6 @@ tags:
 - easy_install
 ---
 
-=================
 经常接触 Python 的同学可能会注意到，当需要安装第三方 python 包时，可能会用到 easy_install 命令。easy_install是由PEAK(Python Enterprise Application Kit)开发的setuptools包里带的一个命令，所以使用easy_install实际上是在调用setuptools来完成安装模块的工作.
 
 官方页面引导的easy_install为Windows准备的安装包只有2.x版本的。那么，在python3下如何安装easy_install呢？   

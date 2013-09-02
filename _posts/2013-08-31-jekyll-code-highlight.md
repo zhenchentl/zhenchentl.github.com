@@ -45,20 +45,6 @@ jek的代码高亮是使用[Pygments][2]来完成的，它是一款语法高亮�
 
 在我的博客中，显示效果如下：
 
-{% highlight java %}
-public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
-{% endhighlight %}
-
 它看起来还不错，代码的可读性大大提高了。
 ###GitHub Pages
 [GitHub Pages][5]也是支持{% highlight %}标记的，提交上去的博客，生成的代码html代码和你本地生成的相同，另外又使用里相同的样式，所以不会有任何问题。
-
-[1]: http://www.python.org/ "Python"
-[2]: http://pygments.org/ "Pygments"
-[3]: http://peak.telecommunity.com/DevCenter/EasyInstall "EasyInstall"
-[4]: http://pygments.org/docs/lexers/ "Available lexers"
-[5]: http://pages.github.com/ "GitHub Pages"

@@ -36,10 +36,20 @@ jek的代码高亮是使用[Pygments][2]来完成的，它是一款语法高亮�
 
 然后，在博客中使用代码高亮，高亮代码的模板是这样的：
 
+	{ % highlight 词法分析器 % }
+	需要高亮的代码
+	{ % endhighlight % }
 
 词法分析器是指你需要高亮的代码是何种语言，比如说Shell脚本的词法分析器是sh，Java的词法分析器是java。支持的词法分析器可以在官方文档Available lexers找到。
 例如你要高亮Java版的HelloWorld，只需要把如下代码粘贴到你的博客中：
 
+	{% highlight java %}
+		public class Hello {
+			public static void main(String[] args) {
+				System.out.println("Hello World!");
+			}
+		}
+	{% endhighlight %}
 
 在我的博客中，显示效果如下：
 
@@ -53,7 +63,7 @@ public class Hello {
 
 它看起来还不错，代码的可读性大大提高了。
 ###GitHub Pages
-[GitHub Pages][5]也是支持标记的，提交上去的博客，生成的代码html代码和你本地生成的相同，另外又使用里相同的样式，所以不会有任何问题。
+[GitHub Pages][5]也是支持`{ % highlight % }`标记的，提交上去的博客，生成的代码html代码和你本地生成的相同，另外又使用里相同的样式，所以不会有任何问题。
 
 [1]: http://www.python.org/ "Python"
 [2]: http://pygments.org/ "Pygments"

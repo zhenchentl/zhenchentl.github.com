@@ -21,7 +21,7 @@ tags:
 jek的代码高亮是使用[Pygments][2]来完成的，它是一款语法高亮的[Python][1]包，所以我们首先需要下载并安装Python。可用如下命令检测是否有Python环境：
 
 	python --version   
-	\# Python 2.7.3
+	# Python 2.7.3
 
 安装[Pygments][2]时需要借助[EasyInstall][3]这个工具，这个工具和Pthon的关系，就像gems和ruby，或者apt-get和ubuntu的关系一样，它可以让你很方便的自动下载、编译、安装和管理[Python][1]包。在[Python][1]的较高版本中，该工具已经自动附带，比如我的版本是2.7.3，easy_install命令已经可以直接使用了，不同平台和环境，可能有所差异(比如Ubuntu上，需要先安装python-setuptools)。若你发现不能使用easy_install命令，记得先安装它。安装好[EasyInstall][3]之后，执行如下命令安装[Pygments][2]：
 
@@ -43,13 +43,13 @@ jek的代码高亮是使用[Pygments][2]来完成的，它是一款语法高亮�
 词法分析器是指你需要高亮的代码是何种语言，比如说Shell脚本的词法分析器是sh，Java的词法分析器是java。支持的词法分析器可以在官方文档Available lexers找到。
 例如你要高亮Java版的HelloWorld，只需要把如下代码粘贴到你的博客中：
 
-	{% highlight java %}
+	{ % highlight java % }
 		public class Hello {
 			public static void main(String[] args) {
 				System.out.println("Hello World!");
 			}
 		}
-	{% endhighlight %}
+	{ % endhighlight % }
 
 在我的博客中，显示效果如下：
 

@@ -9,7 +9,7 @@ tags:
 - vimrc
 ---
 ###[Fork my vimrc](https://github.com/zhenchentl/dotvim.git)
-{% highlight Vim Script %}
+{% highlight python %}
 set cul "高亮光标所在行
 set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示  
 set go=             " 不要图形按钮  

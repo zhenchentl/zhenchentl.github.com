@@ -53,4 +53,4 @@ tags:
 大家都说github上面的项目不容易发现，但其实还是有办法的，比如：
 关注java项目排名：大家戳 [这个网址](https://github.com/languages/Java/most_watched)
 搜索“Android”，并按star排序：戳 [这里](https://github.com/search?q=android&type=Repositories&s=stars) 直达
-最后，还有一招，就是关注些牛人，他们通常会关注或fork一些很有水平的项目
+最后，还有一招，就是关注些牛人，他们通常会关注或fork一些很有水平的项目。

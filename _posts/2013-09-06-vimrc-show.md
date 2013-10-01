@@ -3,7 +3,7 @@ layout: post
 title: 晒晒我的vimrc
 summary: 我的vimrc。
 categories:
-- linux
+- 技术技巧
 tags:
 - vim
 - vimrc

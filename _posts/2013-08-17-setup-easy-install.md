@@ -3,7 +3,7 @@ layout: post
 title: Windows32环境下在python3安装easy_install
 summary: 官方页面引导的easy_install为Windows准备的安装包只有2.x版本的。那么，在python3下如何安装easy_install呢？
 categories:
-- Python
+- 技术技巧
 tags:
 - python
 - easy_install

@@ -3,7 +3,7 @@ layout: post
 title: 精读的博客、文档、书籍及视频
 summary: 在平时学习生活过程中，已经或者正在精读的，并且特别关注的，较为完整、系统的博客、文档、书籍及视频。泛读或者没有太深刻收获的不在此列。（开始于2013年8月25日）
 categories:
-- Read
+- 阅读感悟
 tags:
 - blogs
 - learning

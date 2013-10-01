@@ -3,7 +3,7 @@ layout: post
 title: python redis的简单封装
 summary: python redis的简单封装，日后继续完善。
 categories:
-- redis
+- 技术技巧
 tags:
 - python
 - redis

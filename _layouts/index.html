@@ -16,6 +16,14 @@ layout: default
 		</ul>
 	</div>
 	<div>
+		<h3>标签</h3>
+		<ul>
+			{% for tag in site.tags %}
+			<li><a href="/tag.html#{{tag[0]}}">{{tag[0]}} ({{tag[1] | size}})</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div>
 		<h3>友链</h3>
 		<ul>
 			<li><a href="http://www.ssduter.com/" target="_blank">软院人</a></li>

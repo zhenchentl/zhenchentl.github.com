@@ -1,0 +1,37 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://taoxiaolei.cn/</loc>
+<priority>1.0</priority>
+<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://taoxiaolei.cn/about.html</loc>
+<priority>0.8</priority>
+<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://taoxiaolei.cn/archive.html</loc>
+<priority>0.8</priority>
+<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<loc>http://taoxiaolei.cn/tags.html</loc>
+<priority>0.8</priority>
+<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+<changefreq>Always</changefreq>
+</url>
+{% for post in site.posts %}
+<url>
+<loc>http://taoxiaolei.cn{{ post.url }}</loc>
+<priority>0.8</priority>
+<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+<changefreq>Always</changefreq>
+</url>
+{% endfor %}
+</urlset>

@@ -1,9 +1,9 @@
-permalink: /:year/:month/:day/:title.html
-
-auto: true
-pygments: true
-markdown: rdiscount
-
-#markdown: redcarpet
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+﻿pygments:     true
+markdown:     rdiscount
+permalink:    /posts/:year-:month-:day-:title.html
+title:        Mark Chen
+description:  Mark Chen的个人站点,记录心情与知识。
+keywords:     Mark Chen,个人站点,博客,心情,知识,编程
+author:       Mark Chen
+email:        lingyunyumo@gmail.com
+github:       http://github.com/zhenchentl

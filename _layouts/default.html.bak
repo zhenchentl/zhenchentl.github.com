@@ -108,7 +108,7 @@
 	  </div>
 	  
 	  <div class="list-group">
-		<!-- <h4 class="list-group-item-heading">友情链接</h4>-->
+		<h4 class="list-group-item-heading">友情链接</h4>
 	    <a target="_blank" href="http://www.ssduter.com/" class="list-group-item">
 		  软院人|ssduter.com
 		</a>

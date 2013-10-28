@@ -5,6 +5,7 @@ tags:
 - DBLP
 - 数据集
 ---
+
 前一段时间利用大名鼎鼎的DBLP数据集做关于论文合作关系推荐的实验，感觉确实是一个非常不错的数据集，可挖掘的东西很多很多，在此对DBLP及其用法做一个简单介绍。
 ##简介
 **DBLP**——**Digital Bibliography & Library Project**的缩写。这里是[DBLP的主页](http://www.informatik.uni-trier.de/~ley/db/)   

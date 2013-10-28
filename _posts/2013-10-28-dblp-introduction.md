@@ -24,20 +24,10 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 请求格式：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外也是，Harry Potter,请求参数为`p/Potter:Harry`）
 返回格式：xml文件，两级节点。
 
-{ % highlight XML % }
-<coauthors author="Jie Tang" urlpt="t/Tang:Jie">
-	<author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
-	<author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
-	<author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
-</coauthors>
-{ % endhighlight % }
-
-{% highlight java %}
-public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
-{% endhighlight %}
+	<coauthors author="Jie Tang" urlpt="t/Tang:Jie">
+		<author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
+		<author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
+		<author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
+	</coauthors>
 
 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。

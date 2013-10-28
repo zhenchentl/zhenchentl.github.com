@@ -5,6 +5,7 @@ tags:
 - DBLP
 - 数据集
 ---
+
 前一段时间利用大名鼎鼎的DBLP数据集做关于论文合作关系推荐的实验，感觉确实是一个非常不错的数据集，可挖掘的东西很多很多，在此对DBLP及其用法做一个简单介绍。
 ###简介###
 **DBLP**——**Digital Bibliography & Library Project**的缩写。这里是[DBLP的主页](http://www.informatik.uni-trier.de/~ley/db/)   
@@ -23,12 +24,19 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 请求格式：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外也是，Harry Potter,请求参数为`p/Potter:Harry`）
 返回格式：xml文件，两级节点。
 
-	{ % highlight java % }
-		public class Hello {
-			public static void main(String[] args) {
-				System.out.println("Hello World!");
-			}
-		}
-	{ % endhighlight % }
+{ % highlight xml % }
+<coauthors author="Jie Tang" urlpt="t/Tang:Jie">
+	<author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
+	<author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
+	<author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
+{ % endhighlight % }
+
+{ % highlight java % }
+public class Hello {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
+}
+{ % endhighlight % }
 
 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。

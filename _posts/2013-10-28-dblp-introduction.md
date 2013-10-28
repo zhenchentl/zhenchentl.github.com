@@ -29,14 +29,15 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 	<author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
 	<author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
 	<author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
+</coauthors>
 { % endhighlight % }
 
-{ % highlight java % }
+{% highlight java %}
 public class Hello {
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
-	}
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
 }
-{ % endhighlight % }
+{% endhighlight %}
 
 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。

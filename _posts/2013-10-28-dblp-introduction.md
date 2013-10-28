@@ -28,3 +28,10 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 		<author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
 		<author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
 	{ % endhighlight % }
+	{ % highlight java % }
+		public class Hello {
+			public static void main(String[] args) {
+				System.out.println("Hello World!");
+			}
+		}
+	{ % endhighlight % }

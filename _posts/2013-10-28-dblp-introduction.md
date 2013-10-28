@@ -32,13 +32,9 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 
 **我这里列几个比较可能会用到的**   
 
-
-- **列出所有合作者**：`http://dblp.uni-trier.de/pers/xc/t/Tang:Jie`（不好意思，这里是唐杰老师的名字。）    
-- 
+- **列出所有合作者**：`http://dblp.uni-trier.de/pers/xc/t/Tang:Jie`（不好意思，这里是唐杰老师的名字。）     
 **请求格式**：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外名字也是，Harry Potter,请求参数为`p/Potter:Harry`）   
-
 **返回格式**：   
-
 
 		<coauthors author="Jie Tang" urlpt="t/Tang:Jie">
 			<author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
@@ -46,16 +42,12 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 			<author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
 			...
 		</coauthors>
-
 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。
 
 - **获取论文详细信息**：`http://dblp.uni-trier.de/rec/bibtex/key.xml`   
-- 
 **请求格式**：最后一个参数key为论文在DBLP中的唯一标识，例如：
 `http://dblp.uni-trier.de/rec/bibtex/journals/dke/TangCKW13.xml`（不好意思又是唐老师大作）。   
-
 **返回格式**：
-
 
 		<dblp>
 			<article key="journals/dke/TangCKW13" mdate="2013-10-17">
@@ -79,12 +71,9 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 
 其他字段很明显了，不解释。
 
-- **搜索作者**：`http://dblp.uni-trier.de/search/author?author=Tang`（HTML格式）`http://dblp.uni-trier.de/search/author?xauthor=Tang`(XML格式)    
-- 
+- **搜索作者**：`http://dblp.uni-trier.de/search/author?author=Tang`（HTML格式）   `http://dblp.uni-trier.de/search/author?xauthor=Tang`(XML格式)    
 **请求格式**：author或者xauthor后面加搜索内容    
- 
 **返回格式**：模糊匹配到的作者列表    
-
 
 		<authors>
 			<author urlpt="=/=Fayuan=:Kuo=Ming_Tang">Kuo-Ming Tang (Fayuan)</author>
@@ -97,11 +86,8 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 		</authors>
 
 - **搜索某作者所有论文**：`http://dblp.uni-trier.de/pers/xk/urlpt`        
-- 
-**请求格式**：`http://dblp.uni-trier.de/pers/xk/t/Tang:Jie`
-    
+**请求格式**：`http://dblp.uni-trier.de/pers/xk/t/Tang:Jie`   
 **返回格式**：文章列表。给出的是`dblpkey`，即论文在DBLP中的唯一标识。   
-
 
 		<dblpperson name="Jie Tang">
 			<dblpkey type="person record">homepages/t/JieTang</dblpkey>
@@ -113,7 +99,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 			<dblpkey>journals/kbs/WangLZST13</dblpkey>
 			...
 		</dblpperson>
-
+>
 ##DBLP可下载数据集
 
 下载地址[在这](http://dblp.uni-trier.de/xml/) 。   
@@ -152,7 +138,7 @@ class mHandler(handler.ContentHandler):
 		print 'Element start'
 		
    	def endElement(self, name):
-		print 'Element start'
+		print 'Element end'
 		
    	def characters(self, content):
 		print content

@@ -24,7 +24,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 请求格式：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外也是，Harry Potter,请求参数为`p/Potter:Harry`）
 返回格式：xml文件，两级节点。
 
-{ % highlight xml % }
+{ % highlight html % }
 <coauthors author="Jie Tang" urlpt="t/Tang:Jie">
 	<author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
 	<author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>

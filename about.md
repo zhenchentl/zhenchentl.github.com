@@ -12,9 +12,10 @@ description:
 - 2013 - now 软件工程 硕士@[大连理工大学](http://www.dlut.edu.cn/)   
 
 ----
-- 个人邮箱:[zhenchentl@gmail.com](zhenchentl@gmail.com "zhenchentl@gmail.com")   
-- 新浪微博: [http://weibo.com/markchentl](http://weibo.com/markchentl "http://weibo.com/markchentl")   
-- github : [https://github.com/zhenchentl](https://github.com/zhenchentl "https://github.com/zhenchentl")
+- 个人邮箱 | @[zhenchentl@gmail.com](zhenchentl@gmail.com "zhenchentl@gmail.com")   
+- 新浪微博 | @[DUT_陈振](http://weibo.com/markchentl "http://weibo.com/markchentl")   
+- github | @[zhenchentl](https://github.com/zhenchentl "https://github.com/zhenchentl")
+- 个人简介 | @[DUT Phone Lab](http://dutphonelab.org/zhenchen/)
 
 ![](/img/face.jpg)
 

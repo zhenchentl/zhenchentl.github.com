@@ -38,6 +38,6 @@ Plus：按照惯例，我们得上图！可是推广和运营搞基去了，美�
 ![](../img/beannote_icon.png)
 
 我再来个二维码，方便诸位大大下载！
-![](../img/二维码.png)
+![](../img/erweima.png)
 
 By [Mark Chen](http://weibo.com/markchentl) & [ClarkMMM](http://weibo.com/clarkchencoolguy) **From 大连云间牧场科技有限公司**

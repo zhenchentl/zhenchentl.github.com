@@ -1,7 +1,4 @@
+_site/
+_drafts/
 .DS_Store
-_site/**/*
-_site
-_site/*
-_drafts/**/*
-_drafts
-_drafts/*
+.idea/

@@ -1,9 +1,49 @@
-﻿pygments:     true
-markdown:     rdiscount
-permalink:    /posts/:year-:month-:day-:title.html
-title:        Mark Chen
-description:  Mark Chen的个人站点,记录心情与知识。
-keywords:     Mark Chen,个人站点,博客,心情,知识,编程
-author:       Mark Chen
-email:        zhenchentl@gmail.com
-github:       http://github.com/zhenchentl
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author: 
+  name: 闫肃
+  email: suyan0830@gmail.com
+  link: http://yansu.org
+  weibo: http://weibo.com/yansu0711
+  github: http://github.com/suyan
+
+# 站点信息
+title: 闫肃的博客 
+description: 闫肃的博客
+url: http://yansu.org
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
+favicon: http://yansu-uploads.stor.sinaapp.com/imgs/favicon.ico
+
+# google analytics 设置
+ga:
+  id: UA-54767140-1
+  url: yansu.org
+
+# disqus 设置
+disqus:
+  shortname: suyan-zh
+
+# 主题设置，自动激活某个标签
+active: 技术
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Python
+  - OpenStack
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
+  content: 目录

@@ -6,18 +6,18 @@ kramdown:
   input: GFM
 
 # 作者信息
-author: 
-  name: 闫肃
-  email: suyan0830@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+author:
+  name: Mark Chen
+  email: zhenchentl@gmail.com
+  link: http://zhenchen.me
+  weibo: weibo.com/markchentl
+  github: http://github.com/zhenchentl
 
 # 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
-rss_url: /pages/atom.xml
+title: Mark Chen的博客
+description: Mark Chen的博客
+url: http://zhenchen.me
+#rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
 gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
@@ -36,9 +36,9 @@ disqus:
 active: 技术
 
 # 首页除了最新文章外显示分类
-cates: 
-  - Python
-  - OpenStack
+cates:
+#  - Python
+#  - OpenStack
 
 # 中文本地化
 locals:

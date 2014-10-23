@@ -10,7 +10,7 @@ author:
   name: Mark Chen
   email: zhenchentl@gmail.com
   link: http://zhenchen.me
-  weibo: weibo.com/markchentl
+  weibo: http://weibo.com/markchentl
   github: http://github.com/zhenchentl
 
 # 站点信息
@@ -20,8 +20,8 @@ url: http://zhenchen.me
 #rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
-favicon: http://yansu-uploads.stor.sinaapp.com/imgs/favicon.ico
+gavatar: http://mc-tuchuang.qiniudn.com/mygavatar
+favicon: http://mc-tuchuang.qiniudn.com/favicon.png
 
 # google analytics 设置
 ga:
@@ -30,7 +30,7 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: markchen
 
 # 主题设置，自动激活某个标签
 active: 技术

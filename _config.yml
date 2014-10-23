@@ -23,10 +23,9 @@ url: http://zhenchen.me
 gavatar: http://mc-tuchuang.qiniudn.com/mygavatar
 favicon: http://mc-tuchuang.qiniudn.com/favicon.png
 
-# google analytics 设置
-ga:
-  id: UA-54767140-1
-  url: yansu.org
+# baidu analytics 设置
+analytics:
+  provider: custom
 
 # disqus 设置
 disqus:

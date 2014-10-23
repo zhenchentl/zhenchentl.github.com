@@ -4,7 +4,7 @@ title: 软文一篇：关于豆记，关于Beannote，关于云间牧场
 category: 推广
 tags: 云间牧场
 keywords: Beannote,云间牧场
-description: 
+description:
 ---
 
 我们是一帮大理工大学的学生，无证程序员，我们还有一些正在开发的比较好玩儿的产品，例如Beannote，BeanMemo，BeanReader，BeanCal，BeanTodo这些东西。。。什么，需要个中文名字？分别叫豆记，豆签，豆读，豆日，豆干儿怎么样。。。。反正跟豆子干上了！别问我为什么，老大和曦哥的说法是，**我们是锤不扁，砸不烂，炒不爆的响当当的一锅铜豌豆！**（其实我女朋友听了后，嘴里轻轻吐出四个字，“一群逗逼。。。”）。反正小米出各种米，我们就出各种豆！
@@ -32,13 +32,13 @@ Beannote功能简单，就是让您能随手来记录一些事情，如果我们
 
 Plus：按照惯例，我们得上图！可是推广和运营搞基去了，美工约炮去了。我只能逗逼到底了。。。感谢某浪的发图模板，盗图了！不谢。
 
-![](../img/beannote.jpg)
+![](http://mc-tuchuang.qiniudn.com/bnbeannote.jpg)
 
 忘了我们高端大气上档次，狂赚酷炫屌炸天的Logo。（看着像是木板上一坨屁股，其实是豌豆。。。）
 
-![](../img/beannote_icon.png)
+![](http://mc-tuchuang.qiniudn.com/bnbeannote_icon.png)
 
 我再来个二维码，方便诸位大大下载！
-![](../img/erweima.png)
+![](http://mc-tuchuang.qiniudn.com/bnerweima.png)
 
 By [Mark Chen](http://weibo.com/markchentl) & [ClarkMMM](http://weibo.com/clarkchencoolguy) **From 大连云间牧场科技有限公司**

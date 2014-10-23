@@ -2,13 +2,17 @@
 layout: post
 title: Android优秀开源项目【持续更新】
 category: 技术
-tags: Android,开源项目,收藏
+tags:
+- Android
+- 开源项目
+- 收藏
 keywords: Android
 description: 
 ---
 
 一直想找些Android经典的开源项目学习一下，大健发现了这么一篇帖子，不少好东西，分享在此。希望能够对[Android开发](http://android.eoe.cn/)的同学有所帮助。感谢作者的整理和分享。[tisa007](http://my.eoe.cn/123581)   
 原帖在[这里。](http://www.eoeandroid.com/thread-272453-1-1.html)    
+
 ###项目篇：
 - [Apollo音乐播放器](https://github.com/Splitter/android_packages_apps_apolloMod)：就一个播放器，但是实现的很好
 - [oschina客户端](https://github.com/oschina/android-app)：oschina网站的客户端哦，wp版，iOS版都有开源

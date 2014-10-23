@@ -2,7 +2,9 @@
 layout: post
 title: DBLP数据集简介及简单用法
 category: 技术
-tags: DBLP,数据集
+tags:
+- DBLP
+- 数据集
 keywords: DBLP,数据集
 description: 
 ---

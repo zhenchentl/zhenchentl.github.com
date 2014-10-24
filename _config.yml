@@ -19,7 +19,7 @@ author:
 title: Mark Chen的博客
 description: Mark Chen的博客
 url: http://zhenchen.me
-#rss_url: /pages/atom.xml
+rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
 gavatar: http://mc-tuchuang.qiniudn.com/mygavatar

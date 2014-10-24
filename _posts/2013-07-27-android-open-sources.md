@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android优秀开源项目（更新）
+title: Android优秀开源项目【持续更新】
 category: 技术
 tags:
 - Android

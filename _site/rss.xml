@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>place_your_blog_title_here</title>
+    <link>place_your_blog_url_here</link>
+    <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
+    <description>place_your_blog_description_here</description>
+    <language>place_your_blog_language_here</language>
+    <pubDate>Thu, 30 Oct 2014 17:30:38 +0800</pubDate>
+    <lastBuildDate>Thu, 30 Oct 2014 17:30:38 +0800</lastBuildDate>
+
+    
+    <item>
+      <title>【个人收藏】应用/系统</title>
+      <link>place_your_blog_url_here/2014/10/30/like-list.html</link>
+      <pubDate>30 Oct 2014</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/2014/10/30/like-list</guid>
+      <description>
+</description>
+    </item>
+    
+    <item>
+      <title>2014阅读书单</title>
+      <link>place_your_blog_url_here/2014/10/24/book-list-of-2014.html</link>
+      <pubDate>24 Oct 2014</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/2014/10/24/book-list-of-2014</guid>
+      <description>
+</description>
+    </item>
+    
+    <item>
+      <title>软文一篇：关于豆记，关于Beannote，关于云间牧场</title>
+      <link>place_your_blog_url_here/2014/01/19/about-beannote.html</link>
+      <pubDate>19 Jan 2014</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/2014/01/19/about-beannote</guid>
+      <description>&lt;p&gt;我们是一帮大理工大学的学生，无证程序员，我们还有一些正在开发的比较好玩儿的产品，例如Beannote，BeanMemo，BeanReader，BeanCal，BeanTodo这些东西。。。什么，需要个中文名字？分别叫豆记，豆签，豆读，豆日，豆干儿怎么样。。。。反正跟豆子干上了！别问我为什么，老大和曦哥的说法是，&lt;strong&gt;我们是锤不扁，砸不烂，炒不爆的响当当的一锅铜豌豆！&lt;/strong&gt;（其实我女朋友听了后，嘴里轻轻吐出四个字，“一群逗逼。。。”）。反正小米出各种米，我们就出各种豆！&lt;/p&gt;
+
+&lt;p&gt;如果您真的喜欢我们的产品的话，可以到公司主页上去看看呢！&lt;a href=&quot;http://www.beannote.com/&quot;&gt;www.beannote.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;当然，废话不多说，今天的主题是Beannote，传说中的豆记。&lt;a href=&quot;http://www.windowsphone.com/zh-cn/store/app/beannote/03d348c8-bfc7-4fe7-95d0-da6c54be2111&quot;&gt;WP版&lt;/a&gt;早已上线，Android版最近才上（&lt;a href=&quot;http://apk.hiapk.com/html/2014/01/2261312.html&quot;&gt;在这里&lt;/a&gt;或者&lt;a href=&quot;http://app.xiaomi.com/detail/55014&quot;&gt;在这里&lt;/a&gt;。。。），IOS版目测也快了~~~&lt;/p&gt;
+
+&lt;p&gt;其实，上线的时候我们心里挺忐忑的——法律条款。说实话，一般的法律条款和用户协议，实际上就是这个公司怕惹上事儿，因为人家确实有钱，被罚款还是挺肉疼的，虽然我们也有一个叫做&lt;strong&gt;云间牧场&lt;/strong&gt;的公司名义，但其实很屌丝，如果您是一个无所谓的看官的话，您看着我们乐一乐就行了，如果您是一个专业抓漏洞的，屌丝何苦为难屌丝，放过我们吧。我们这个也不例外，不长篇大论的跟您讲，就简单来搞吧。&lt;/p&gt;
+
+&lt;p&gt;Beannote功能简单，就是让您能随手来记录一些事情，如果我们非说有啥特点，那只能是简单了，用过的人您应该能看得到，我们连开场的引导动画都没做，而且目前只有手机客户端的。&lt;/p&gt;
+
+&lt;p&gt;您的笔记信息都被同步到Beannote服务器上，但是您放心，业界良心，您的笔记内容我们绝不会自己用于信息挖掘或者其他一些能导致您笔记信息泄露的事情。&lt;/p&gt;
+
+&lt;p&gt;当然也奉劝您一句不要写啥太不和谐的东西，虽然您就是写了也不会像其他笔记软件那样给您生成静态链接。&lt;/p&gt;
+
+&lt;p&gt;万一您丢东西了，大部分情况是您操作失误了，当有可能是服务器宕机了，这个时候您也不要慌，顶多就是一段时间同步不了而已。&lt;/p&gt;
+
+&lt;p&gt;当然丑话也得说，以下情况，我们视为特殊情况，出现啥事概不负责。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;我们的服务器机房突然地震大伙，这些意外因素导致数据丢失，这我们有什么办法，不负责。&lt;/li&gt;
+  &lt;li&gt;如果公司破产的话，我们会提前一个月通知您的，然后将您的数据导出。&lt;/li&gt;
+  &lt;li&gt;如果“有关部门”依法来查，我们实在是推脱不过去的话。&lt;/li&gt;
+  &lt;li&gt;其他情况。。。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Plus：按照惯例，我们得上图！可是推广和运营搞基去了，美工约炮去了。我只能逗逼到底了。。。感谢某浪的发图模板，盗图了！不谢。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://mc-tuchuang.qiniudn.com/bnbeannote.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;忘了我们高端大气上档次，狂赚酷炫屌炸天的Logo。（看着像是木板上一坨屁股，其实是豌豆。。。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://mc-tuchuang.qiniudn.com/bnbeannote_icon.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我再来个二维码，方便诸位大大下载！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://mc-tuchuang.qiniudn.com/bnerweima.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;By &lt;a href=&quot;http://weibo.com/markchentl&quot;&gt;Mark Chen&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://weibo.com/clarkchencoolguy&quot;&gt;ClarkMMM&lt;/a&gt; &lt;strong&gt;From 大连云间牧场科技有限公司&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DBLP数据集简介及简单用法</title>
+      <link>place_your_blog_url_here/2013/10/28/dblp-introduction.html</link>
+      <pubDate>28 Oct 2013</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/2013/10/28/dblp-introduction</guid>
+      <description>&lt;p&gt;前一段时间利用大名鼎鼎的DBLP数据集做关于论文合作关系推荐的实验，感觉确实是一个非常不错的数据集，可挖掘的东西很多很多，在此对DBLP及其用法做一个简单介绍。&lt;/p&gt;
+
+&lt;p&gt;###简介&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DBLP&lt;/strong&gt;——&lt;strong&gt;Digital Bibliography &amp;amp; Library Project&lt;/strong&gt;的缩写。这里是&lt;a href=&quot;http://www.informatik.uni-trier.de/~ley/db/&quot;&gt;DBLP的主页&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;DBLP是计算机领域内对研究的成果以作者为核心的一个计算机类英文文献的集成数据库系统，按年代列出了作者的科研成果。包括国际期刊和会议等公开发表的论文。DBLP没有提供对中文文献的收录和检索功能，国内类似的权威期刊及重要会议论文集成检索系统有C-DBLP。&lt;/p&gt;
+
+&lt;p&gt;这个项目是德国特里尔大学的Michael Ley负责开发和维护。它提供计算机领域科学文献的搜索服务，但只储存这些文献的相关元数据，如标题，作者，发表日期等。和一般流行的情况不同，DBLP并没有使用数据库而是使用XML存储元数据。&lt;/p&gt;
+
+&lt;p&gt;DBLP在学术界声誉很高，而且很多论文及实验都是基于DBLP的。所收录的期刊和会议论文质量较高，也比较全面。（我刚才看了下，已经大致集成2.1 million的文章，也包含了很多计算机科学研究者的主页连接。）文献更新速度很快（现在是2013年10月28日，系统显示最后一次更新是2013年10月27日。可见更新之快），能很好地反应了国外学术研究的前沿方向。&lt;/p&gt;
+
+&lt;p&gt;官网发了&lt;a href=&quot;http://dblp.uni-trier.de/xml/docu/dblpxml.pdf&quot;&gt;这篇文章&lt;/a&gt;，对DBLP做了详细解释。&lt;/p&gt;
+
+&lt;p&gt;另外，DBLP数据开放免费，版权和许可&lt;a href=&quot;http://www.informatik.uni-trier.de/~ley/db/copyright.html&quot;&gt;在这&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;###提供的服务&lt;/p&gt;
+
+&lt;p&gt;DBLP的支持团队基于DBLP数据做了很多工作。提供各种搜索、统计等服务，并提供了API和可下载数据集。&lt;a href=&quot;http://dblps.uni-trier.de/~mwagner/statistics/&quot;&gt;这里&lt;/a&gt;有些有意思的统计数据，并用google chart tool做了可视化处理。例如：出版物类型分布，每个期刊或会议的作者数，每年论文数目，每个作者的合作者数目，并且每年、每月都会做些全局数据统计。&lt;/p&gt;
+
+&lt;p&gt;###DBLP的API&lt;/p&gt;
+
+&lt;p&gt;DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度没较高要求的话，可使用它的API。&lt;a href=&quot;http://dblp.uni-trier.de/xml/docu/dblpxmlreq.pdf&quot;&gt;这里&lt;/a&gt;官网发了篇文章，里面解释了BDLP的基础API以及用法，还有几个例子（java、C）。有个是经典的“两个作者在合作网络上的最短路径”。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;我这里列几个比较可能会用到的&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;列出所有合作者&lt;/strong&gt;：&lt;code&gt;http://dblp.uni-trier.de/pers/xc/t/Tang:Jie&lt;/code&gt;（不好意思，这里是唐杰老师的名字。）
+&lt;strong&gt;请求格式&lt;/strong&gt;：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外名字也是，Harry Potter,请求参数为&lt;code&gt;p/Potter:Harry&lt;/code&gt;）
+&lt;strong&gt;返回格式&lt;/strong&gt;：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  &amp;lt;coauthors author=&quot;Jie Tang&quot; urlpt=&quot;t/Tang:Jie&quot;&amp;gt;
+      &amp;lt;author urlpt=&quot;a/Abbeel:Pieter&quot; count=&quot;4&quot;&amp;gt;Pieter Abbeel&amp;lt;/author&amp;gt;
+      &amp;lt;author urlpt=&quot;a/Aberer:Karl&quot; count=&quot;1&quot;&amp;gt;Karl Aberer&amp;lt;/author&amp;gt;
+      &amp;lt;author urlpt=&quot;a/Anderson:Steven_J=&quot; count=&quot;1&quot;&amp;gt;Steven J. Anderson&amp;lt;/author&amp;gt;
+      ...
+  &amp;lt;/coauthors&amp;gt; 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;获取论文详细信息&lt;/strong&gt;：&lt;code&gt;http://dblp.uni-trier.de/rec/bibtex/key.xml&lt;/code&gt;
+&lt;strong&gt;请求格式&lt;/strong&gt;：最后一个参数key为论文在DBLP中的唯一标识，例如：
+&lt;code&gt;http://dblp.uni-trier.de/rec/bibtex/journals/dke/TangCKW13.xml&lt;/code&gt;（不好意思又是唐老师大作）。
+&lt;strong&gt;返回格式&lt;/strong&gt;：&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  &amp;lt;dblp&amp;gt;
+      &amp;lt;article key=&quot;journals/dke/TangCKW13&quot; mdate=&quot;2013-10-17&quot;&amp;gt;
+          &amp;lt;author&amp;gt;Jie Tang&amp;lt;/author&amp;gt;
+          &amp;lt;author&amp;gt;Ling Chen&amp;lt;/author&amp;gt;
+          &amp;lt;author&amp;gt;Irwin King&amp;lt;/author&amp;gt;
+          &amp;lt;author&amp;gt;Jianyong Wang&amp;lt;/author&amp;gt;
+          &amp;lt;title&amp;gt;
+              Introduction to Special section on Large-scale Data Mining.
+          &amp;lt;/title&amp;gt;
+          &amp;lt;pages&amp;gt;355-356&amp;lt;/pages&amp;gt;
+          &amp;lt;year&amp;gt;2013&amp;lt;/year&amp;gt;
+          &amp;lt;volume&amp;gt;87&amp;lt;/volume&amp;gt;
+          &amp;lt;journal&amp;gt;Data Knowl. Eng.&amp;lt;/journal&amp;gt;
+          &amp;lt;ee&amp;gt;http://dx.doi.org/10.1016/j.datak.2013.05.001&amp;lt;/ee&amp;gt;
+          &amp;lt;url&amp;gt;db/journals/dke/dke87.html#TangCKW13&amp;lt;/url&amp;gt;
+      &amp;lt;/article&amp;gt;
+  &amp;lt;/dblp&amp;gt; 注意：`article`的key唯一标识该文章，`journals`表示期刊，`dke`表示期刊名，（一般是期刊名首字母） 其他字段很明显了，不解释。
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;搜索作者&lt;/strong&gt;：&lt;code&gt;http://dblp.uni-trier.de/search/author?author=Tang&lt;/code&gt;（HTML格式）   &lt;code&gt;http://dblp.uni-trier.de/search/author?xauthor=Tang&lt;/code&gt;(XML格式)
+&lt;strong&gt;请求格式&lt;/strong&gt;：author或者xauthor后面加搜索内容
+&lt;strong&gt;返回格式&lt;/strong&gt;：模糊匹配到的作者列表&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  &amp;lt;authors&amp;gt;
+      &amp;lt;author urlpt=&quot;=/=Fayuan=:Kuo=Ming_Tang&quot;&amp;gt;Kuo-Ming Tang (Fayuan)&amp;lt;/author&amp;gt;
+      &amp;lt;author urlpt=&quot;b/Basar:Tang=uuml=l_=Uuml==&quot;&amp;gt;Tangül Ü. Basar&amp;lt;/author&amp;gt;
+      &amp;lt;author urlpt=&quot;b/Berre:Tanguy_Le&quot;&amp;gt;Tanguy Le Berre&amp;lt;/author&amp;gt;
+      &amp;lt;author urlpt=&quot;b/Boespflug=Tanguy:Odile&quot;&amp;gt;Odile Boespflug-Tanguy&amp;lt;/author&amp;gt;
+      &amp;lt;author urlpt=&quot;b/Bohnuud:Tanggis&quot;&amp;gt;Tanggis Bohnuud&amp;lt;/author&amp;gt;
+      &amp;lt;author urlpt=&quot;b/Boyland:John_Tang&quot;&amp;gt;John Tang Boyland&amp;lt;/author&amp;gt;
+      ...
+  &amp;lt;/authors&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;搜索某作者所有论文&lt;/strong&gt;：&lt;code&gt;http://dblp.uni-trier.de/pers/xk/urlpt&lt;/code&gt;
+&lt;strong&gt;请求格式&lt;/strong&gt;：&lt;code&gt;http://dblp.uni-trier.de/pers/xk/t/Tang:Jie&lt;/code&gt;
+&lt;strong&gt;返回格式&lt;/strong&gt;：文章列表。给出的是&lt;code&gt;dblpkey&lt;/code&gt;，即论文在DBLP中的唯一标识。&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  &amp;lt;dblpperson name=&quot;Jie Tang&quot;&amp;gt;
+      &amp;lt;dblpkey type=&quot;person record&quot;&amp;gt;homepages/t/JieTang&amp;lt;/dblpkey&amp;gt;
+      &amp;lt;dblpkey&amp;gt;journals/dke/TangCKW13&amp;lt;/dblpkey&amp;gt;
+      &amp;lt;dblpkey&amp;gt;journals/icl/BournakaTLL13&amp;lt;/dblpkey&amp;gt;
+      &amp;lt;dblpkey&amp;gt;journals/jcst/TangTLLGG13&amp;lt;/dblpkey&amp;gt;
+      &amp;lt;dblpkey&amp;gt;journals/joi/HeDTRB13&amp;lt;/dblpkey&amp;gt;
+      &amp;lt;dblpkey&amp;gt;journals/kais/WangTFCTY13&amp;lt;/dblpkey&amp;gt;
+      &amp;lt;dblpkey&amp;gt;journals/kbs/WangLZST13&amp;lt;/dblpkey&amp;gt;
+      ...
+  &amp;lt;/dblpperson&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;###DBLP可下载数据集&lt;/p&gt;
+
+&lt;p&gt;下载地址&lt;a href=&quot;http://dblp.uni-trier.de/xml/&quot;&gt;在这&lt;/a&gt; 。&lt;/p&gt;
+
+&lt;p&gt;其中：&lt;strong&gt;dblp.xml&lt;/strong&gt;是我们需要的数据集。&lt;strong&gt;dblp.dtd&lt;/strong&gt;是格式说明文件。解析的时候和前者放在一&lt;br /&gt;
+起。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;dblp.xml文件格式&lt;/strong&gt;：除&lt;dblp&gt;标签外的一级标签有：**Article**，**inproceedings**，  **proceedings**，  **book**，  **incollection**， **phdthesis**， **mastersthesis** ，**www**&lt;/dblp&gt;&lt;/p&gt;
+
+&lt;p&gt;###我对DBLP的处理&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;语言&lt;/strong&gt;：Python&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;工具&lt;/strong&gt;：SAX解析包（专门处理xml文档。Python的一个类库）&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SAX解析代码&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;p&gt;sax是一个基于事件流的xml解析工具，边读文件边解析，好处是无内存限制，可以解析处理较大的xml文件。其代码如下。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;xml.sax&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make_parser&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;paperTag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;article&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;inproceedings&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;proceedings&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;book&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                   &lt;span class=&quot;s&quot;&gt;&amp;#39;incollection&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;phdthesis&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;mastersthesis&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;www&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;mHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ContentHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+   	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+   	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;startDocument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+   	    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;Document Start&amp;#39;&lt;/span&gt;
+
+   	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;endDocument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+   	    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;Document End&amp;#39;&lt;/span&gt;
+
+   	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;startElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;Element start&amp;#39;&lt;/span&gt;
+
+   	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;endElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;Element end&amp;#39;&lt;/span&gt;
+
+   	&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;characters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;parserDblpXml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make_parser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setContentHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DBLP_XML_PATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;__name__&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;parserDblpXml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;###简单总结&lt;/p&gt;
+
+&lt;p&gt;总的来说，DBLP集成元素不多，只有最基本的论文题目，时间，作者，发表类型及期刊或会议名称等等。可能很多人想要的标签、关键词都没有。但是，基于DBLP数据集这些基本的元素，可以挖掘、利用的也是很多。例如官网给出的统计信息，就能引申出很多东西。&lt;/p&gt;
+
+&lt;p&gt;涉及到DBLP，我能一下想到的关键词：经典的复杂网络，小世界，无标度，合作关系网，关系推荐，聚类，连接预测，随机游走，中心作者分析，作者影响力分析，研究热点发展等等，非常多。因此，DBLP是个很丰富宝贵的资源。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;整理的有点乱，也不全面。仅作参考。欢迎补充、共享。&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Android优秀开源项目【持续更新】</title>
+      <link>place_your_blog_url_here/2013/07/27/android-open-sources.html</link>
+      <pubDate>27 Jul 2013</pubDate>
+      <author>place_your_name_here</author>
+      <guid>place_your_blog_url_here/2013/07/27/android-open-sources</guid>
+      <description>&lt;p&gt;一直想找些Android经典的开源项目学习一下，大健发现了这么一篇帖子，不少好东西，分享在此。希望能够对&lt;a href=&quot;http://android.eoe.cn/&quot;&gt;Android开发&lt;/a&gt;的同学有所帮助。感谢作者的整理和分享。&lt;a href=&quot;http://my.eoe.cn/123581&quot;&gt;tisa007&lt;/a&gt;   &lt;br /&gt;
+原帖在&lt;a href=&quot;http://www.eoeandroid.com/thread-272453-1-1.html&quot;&gt;这里。&lt;/a&gt;    &lt;/p&gt;
+
+&lt;p&gt;###项目篇：&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/Splitter/android_packages_apps_apolloMod&quot;&gt;Apollo音乐播放器&lt;/a&gt;：就一个播放器，但是实现的很好&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/oschina/android-app&quot;&gt;oschina客户端&lt;/a&gt;：oschina网站的客户端哦，wp版，iOS版都有开源&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/redsolution/xabber-android&quot;&gt;xabber实时聊天工具（基于xmpp协议）&lt;/a&gt;：不评价了，反正算是同类中比较好的了&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/qii/weiciyuan&quot;&gt;四次元新浪微博客户端&lt;/a&gt;：今天才知道是开源的，赶紧收藏&lt;br /&gt;
+- &lt;a href=&quot;https://code.google.com/p/iosched/&quot;&gt;Google IO&lt;/a&gt;：谷歌开发者大会应用，虽然有点难懂，还是很有参考价值（比如其中的图片加载）&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/eoecn/android-app/&quot;&gt;eoe客户端&lt;/a&gt;：eoe网站Android客户端也开源咯，嘿嘿&lt;/p&gt;
+
+&lt;p&gt;###组件篇：&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/openaphid/android-flip&quot;&gt;Android-Flip&lt;/a&gt;：可以实现类似FlipBoard那种华丽丽的翻页&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/bauerca/drag-sort-listview&quot;&gt;Drag-Sort-Listview&lt;/a&gt;：可以拖动item重新排序的listview，效果非常赞&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/Prototik/HoloEverywhere&quot;&gt;HoloEveryWhere&lt;/a&gt;：咳咳，有些同学非常喜欢Android的holo风格，这个项目绝对让你happy&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/tisa007/Android-Universal-Image-Loader&quot;&gt;Universal-ImageLoader&lt;/a&gt;：这个经典的异步图片加载，不多说了&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/jfeinstein10/JazzyViewPager&quot;&gt;JazzyViewPager&lt;/a&gt;：这玩意可以让ViewPager翻起来更酷，谁用谁知道~~&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/jfeinstein10/SlidingMenu&quot;&gt;SlidingMenu&lt;/a&gt;：这个是抽屉界面（就是facebook那种）的各种实现版本中，最好的，木有之一！&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/emilsjolander/StickyListHeaders&quot;&gt;StickyListHeaders&lt;/a&gt;：iPhone上经常有这个，就是listview的……不知道怎么解释，自己下载看看吧&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/chrisbanes/Android-PullToRefresh&quot;&gt;Android-PullToRefresh&lt;/a&gt;：下拉刷新，挺常用的一个组件&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/maurycyw/StaggeredGridView&quot;&gt;StaggeredGridView&lt;/a&gt;：这是一个瀑布流布局的实现，还不是很完善，但作为学习的案例或者在其基础上扩展还是不错的&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/loopj/android-async-http&quot;&gt;android-async-http&lt;/a&gt;：android的异步请求组件，我个人习惯使用asynctask，不过这个实现还是很优秀的，也推荐给大家&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/JakeWharton/ActionBarSherlock?source=cr&quot;&gt;ActionBarSherlock&lt;/a&gt;：大家熟知的ActionBar在2.x上的兼容性方案；类似的兼容性组件还有许多，有时间为大家一一列出；&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/facebook/facebook-android-sdk/&quot;&gt;facebook-android-sdk&lt;/a&gt;：不止是一个SDK那么简单哦，比某浪和某人的SDK强几个数量级；&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/JakeWharton/NineOldAndroids&quot;&gt;NineOldAndroids&lt;/a&gt;：想在2.xSDK上使用Android 3.0新增的动画API，那就是它了；没用过的同学一定要试试哦，非常方便~&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/47deg/android-swipelistview&quot;&gt;android-swipelistview&lt;/a&gt;：让listview的item可以向右滑动，新版Gmail和Pocket里面有用到哦~&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/foxykeep/DataDroid&quot;&gt;DataDroid&lt;/a&gt;：Android的RESTful封装，没听过RESTful？你去死吧&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/greenrobot/EventBus&quot;&gt;EventBus&lt;/a&gt;：和上面的DataDroid同样属于美化底层代码的，这个lib简化了不同组件之间的事件传递&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/BoD/android-switch-backport&quot;&gt;android-switch-backport&lt;/a&gt;：Android3.0以上才有的switch，有好心人给迁移到2.x上了，哈&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/astuetz/PagerSlidingTabStrip&quot;&gt;PagerSlidingTabStrip&lt;/a&gt;：最新版的GooglePlay的那个tab效果，可炫可炫了&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/pwnall/chromeview&quot;&gt;chromeview&lt;/a&gt;：我们都知道webview，也知道Android的chrome又自己的内核，这个项目就是把chrome的内核给导出来做成一个chromeview了，大家可以在自己的项目里用，有兴趣的可以玩玩&lt;br /&gt;
+- &lt;a href=&quot;https://github.com/square/picasso&quot;&gt;picasso&lt;/a&gt;：来自square的图片异步加载，好像是最近才开源的，API风格很独特，哥很喜欢~&lt;/p&gt;
+
+&lt;p&gt;###顺便推荐大家几个网站：   &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;github&lt;/a&gt;：各种项目很多，就是不容易挖掘，但是开发者必备&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.oschina.net/&quot;&gt;oschina&lt;/a&gt;：曾经一般，现在越做越好了，很多开源项目；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.eoe.cn/code/android.html&quot;&gt;eoeandroid&lt;/a&gt;：经过一番整理，现在非常强大；小作品居多；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.androidviews.net/&quot;&gt;AndroidViews&lt;/a&gt;：我曾经想做这么一个网站来着，很多开源组件的集合，嘿嘿&lt;/li&gt;
+  &lt;li&gt;vogella:国外的一个教程网站，不是逗小孩玩的那种哦~&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;大家都说github上面的项目不容易发现，但其实还是有办法的，比如：&lt;br /&gt;
+关注java项目排名：大家戳 &lt;a href=&quot;https://github.com/languages/Java/most_watched&quot;&gt;这个网址&lt;/a&gt;&lt;br /&gt;
+搜索“Android”，并按star排序：戳 &lt;a href=&quot;https://github.com/search?q=android&amp;amp;type=Repositories&amp;amp;s=stars&quot;&gt;这里&lt;/a&gt; 直达&lt;br /&gt;
+最后，还有一招，就是关注些牛人，他们通常会关注或fork一些很有水平的项目。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

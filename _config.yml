@@ -1,1 +1,14 @@
-pygments: true
+highlighter: true
+
+# 作者信息
+author:
+  name: Mark Chen
+  email: zhenchentl@gmail.com
+  link: http://zhenchen.me
+  weibo: http://weibo.com/markchentl
+  github: http://github.com/zhenchentl
+
+# 站点信息
+title: Mark Chen的博客
+description: Mark Chen的博客
+url: http://zhenchen.me

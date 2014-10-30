@@ -25,7 +25,7 @@
         </ul>
 
         <div id="tags__bottom">
-          <a href="mailto:place_your_email_address_here" id="icon-email" class="tags-btn fontello"></a>
+          <a href="mailto:" id="icon-email" class="tags-btn fontello"></a>
           <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
         </div>
       </nav> <!-- end #tags -->
@@ -39,15 +39,15 @@
 
         <nav id="pl__container">
         
-          <a class="收藏 pl__all" href="/2014/10/30/like-list.html"><span class="pl__circle"></span><span class="pl__title">【个人收藏】应用/系统</span><span class="pl__date">Oct 2014</span></a>
+          <a class="like pl__all" href="/like/2014/10/30/like-list.html"><span class="pl__circle"></span><span class="pl__title">【个人收藏】应用/系统</span><span class="pl__date">Oct 2014</span></a>
         
-          <a class="读书 pl__all" href="/2014/10/24/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2014阅读书单</span><span class="pl__date">Oct 2014</span></a>
+          <a class="read pl__all" href="/read/2014/10/24/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2014阅读书单</span><span class="pl__date">Oct 2014</span></a>
         
-          <a class="推广 pl__all" href="/2014/01/19/about-beannote.html"><span class="pl__circle"></span><span class="pl__title">软文一篇：关于豆记，关于Beannote，关于云间牧场</span><span class="pl__date">Jan 2014</span></a>
+          <a class="release pl__all" href="/release/2014/01/19/about-beannote.html"><span class="pl__circle"></span><span class="pl__title">软文一篇：关于豆记，关于Beannote，关于云间牧场</span><span class="pl__date">Jan 2014</span></a>
         
-          <a class="技术 pl__all" href="/2013/10/28/dblp-introduction.html"><span class="pl__circle"></span><span class="pl__title">DBLP数据集简介及简单用法</span><span class="pl__date">Oct 2013</span></a>
+          <a class="technology pl__all" href="/technology/2013/10/28/dblp-introduction.html"><span class="pl__circle"></span><span class="pl__title">DBLP数据集简介及简单用法</span><span class="pl__date">Oct 2013</span></a>
         
-          <a class="技术 pl__all" href="/2013/07/27/android-open-sources.html"><span class="pl__circle"></span><span class="pl__title">Android优秀开源项目【持续更新】</span><span class="pl__date">Jul 2013</span></a>
+          <a class="technology pl__all" href="/technology/2013/07/27/android-open-sources.html"><span class="pl__circle"></span><span class="pl__title">Android优秀开源项目【持续更新】</span><span class="pl__date">Jul 2013</span></a>
         
         </nav>
       </div> <!-- end #posts-list -->
@@ -59,7 +59,7 @@
   <h1 id="post__title" data-identifier="20131028">DBLP数据集简介及简单用法</h1>
   <p>前一段时间利用大名鼎鼎的DBLP数据集做关于论文合作关系推荐的实验，感觉确实是一个非常不错的数据集，可挖掘的东西很多很多，在此对DBLP及其用法做一个简单介绍。</p>
 
-<p>###简介</p>
+<h3 id="section">简介</h3>
 
 <p><strong>DBLP</strong>——<strong>Digital Bibliography &amp; Library Project</strong>的缩写。这里是<a href="http://www.informatik.uni-trier.de/~ley/db/">DBLP的主页</a></p>
 
@@ -73,11 +73,11 @@
 
 <p>另外，DBLP数据开放免费，版权和许可<a href="http://www.informatik.uni-trier.de/~ley/db/copyright.html">在这</a>。</p>
 
-<p>###提供的服务</p>
+<h3 id="section-1">提供的服务</h3>
 
 <p>DBLP的支持团队基于DBLP数据做了很多工作。提供各种搜索、统计等服务，并提供了API和可下载数据集。<a href="http://dblps.uni-trier.de/~mwagner/statistics/">这里</a>有些有意思的统计数据，并用google chart tool做了可视化处理。例如：出版物类型分布，每个期刊或会议的作者数，每年论文数目，每个作者的合作者数目，并且每年、每月都会做些全局数据统计。</p>
 
-<p>###DBLP的API</p>
+<h3 id="dblpapi">DBLP的API</h3>
 
 <p>DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度没较高要求的话，可使用它的API。<a href="http://dblp.uni-trier.de/xml/docu/dblpxmlreq.pdf">这里</a>官网发了篇文章，里面解释了BDLP的基础API以及用法，还有几个例子（java、C）。有个是经典的“两个作者在合作网络上的最短路径”。</p>
 
@@ -157,16 +157,16 @@
   </li>
 </ul>
 
-<p>###DBLP可下载数据集</p>
+<h3 id="dblp">DBLP可下载数据集</h3>
 
 <p>下载地址<a href="http://dblp.uni-trier.de/xml/">在这</a> 。</p>
 
-<p>其中：<strong>dblp.xml</strong>是我们需要的数据集。<strong>dblp.dtd</strong>是格式说明文件。解析的时候和前者放在一<br />
+<p>其中：<strong>dblp.xml</strong>是我们需要的数据集。<strong>dblp.dtd</strong>是格式说明文件。解析的时候和前者放在一
 起。</p>
 
 <p><strong>dblp.xml文件格式</strong>：除<dblp>标签外的一级标签有：**Article**，**inproceedings**，  **proceedings**，  **book**，  **incollection**， **phdthesis**， **mastersthesis** ，**www**</dblp></p>
 
-<p>###我对DBLP的处理</p>
+<h3 id="dblp-1">我对DBLP的处理</h3>
 
 <p><strong>语言</strong>：Python</p>
 
@@ -176,39 +176,39 @@
 
 <p>sax是一个基于事件流的xml解析工具，边读文件边解析，好处是无内存限制，可以解析处理较大的xml文件。其代码如下。</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">xml.sax</span> <span class="kn">import</span> <span class="n">handler</span><span class="p">,</span> <span class="n">make_parser</span>
-<span class="n">paperTag</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;article&#39;</span><span class="p">,</span><span class="s">&#39;inproceedings&#39;</span><span class="p">,</span><span class="s">&#39;proceedings&#39;</span><span class="p">,</span><span class="s">&#39;book&#39;</span><span class="p">,</span>
-                   <span class="s">&#39;incollection&#39;</span><span class="p">,</span><span class="s">&#39;phdthesis&#39;</span><span class="p">,</span><span class="s">&#39;mastersthesis&#39;</span><span class="p">,</span><span class="s">&#39;www&#39;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">mHandler</span><span class="p">(</span><span class="n">handler</span><span class="o">.</span><span class="n">ContentHandler</span><span class="p">):</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python">from xml.sax import handler, make_parser
+paperTag = (&#39;article&#39;,&#39;inproceedings&#39;,&#39;proceedings&#39;,&#39;book&#39;,
+                   &#39;incollection&#39;,&#39;phdthesis&#39;,&#39;mastersthesis&#39;,&#39;www&#39;)
+class mHandler(handler.ContentHandler):
 
-   	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+   	def __init__(self):
 
-   	<span class="k">def</span> <span class="nf">startDocument</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-   	    <span class="k">print</span> <span class="s">&#39;Document Start&#39;</span>
+   	def startDocument(self):
+   	    print &#39;Document Start&#39;
 
-   	<span class="k">def</span> <span class="nf">endDocument</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-   	    <span class="k">print</span> <span class="s">&#39;Document End&#39;</span>
+   	def endDocument(self):
+   	    print &#39;Document End&#39;
 
-   	<span class="k">def</span> <span class="nf">startElement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
-		<span class="k">print</span> <span class="s">&#39;Element start&#39;</span>
+   	def startElement(self, name, attrs):
+		print &#39;Element start&#39;
 
-   	<span class="k">def</span> <span class="nf">endElement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-		<span class="k">print</span> <span class="s">&#39;Element end&#39;</span>
+   	def endElement(self, name):
+		print &#39;Element end&#39;
 
-   	<span class="k">def</span> <span class="nf">characters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
-		<span class="k">print</span> <span class="n">content</span>
+   	def characters(self, content):
+		print content
 
-<span class="k">def</span> <span class="nf">parserDblpXml</span><span class="p">():</span>
-    <span class="n">handler</span> <span class="o">=</span> <span class="n">mHandler</span><span class="p">()</span>
-    <span class="n">parser</span> <span class="o">=</span> <span class="n">make_parser</span><span class="p">()</span>
-    <span class="n">parser</span><span class="o">.</span><span class="n">setContentHandler</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">DBLP_XML_PATH</span><span class="p">,</span><span class="s">&#39;r&#39;</span><span class="p">)</span>
-    <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-	<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__name__&#39;</span><span class="p">:</span>
-    <span class="n">parserDblpXml</span><span class="p">()</span></code></pre></div>
+def parserDblpXml():
+    handler = mHandler()
+    parser = make_parser()
+    parser.setContentHandler(handler)
+    f = open(DBLP_XML_PATH,&#39;r&#39;)
+    parser.parse(f)
+    f.close()
+	if __name__ == &#39;__name__&#39;:
+    parserDblpXml()</code></pre></div>
 
-<p>###简单总结</p>
+<h3 id="section-2">简单总结</h3>
 
 <p>总的来说，DBLP集成元素不多，只有最基本的论文题目，时间，作者，发表类型及期刊或会议名称等等。可能很多人想要的标签、关键词都没有。但是，基于DBLP数据集这些基本的元素，可以挖掘、利用的也是很多。例如官网给出的统计信息，就能引申出很多东西。</p>
 
@@ -219,9 +219,9 @@
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//2013/10/28/dblp-introduction.html&text=DBLP数据集简介及简单用法" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//technology/2013/10/28/dblp-introduction.html&text=DBLP数据集简介及简单用法" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//2013/10/28/dblp-introduction.html&title=DBLP数据集简介及简单用法" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2013/10/28/dblp-introduction.html&title=DBLP数据集简介及简单用法" target="_blank"></a>
 </div> <!-- end #post__share -->
 
 <div id="disqus_thread">
@@ -230,6 +230,7 @@
 </div> <!-- end #disqus_thread -->
 
 <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
+
       </div> <!-- end #pjax -->
 
       <div id="post__toc-trigger">

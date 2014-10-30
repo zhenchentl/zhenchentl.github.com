@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Android优秀开源项目【持续更新】
-category: 技术
+category: technology
 tags:
 - Android
 - 开源项目
 - 收藏
 keywords: Android
-description: 
+description:
 ---
 
-一直想找些Android经典的开源项目学习一下，大健发现了这么一篇帖子，不少好东西，分享在此。希望能够对[Android开发](http://android.eoe.cn/)的同学有所帮助。感谢作者的整理和分享。[tisa007](http://my.eoe.cn/123581)   
-原帖在[这里。](http://www.eoeandroid.com/thread-272453-1-1.html)    
+一直想找些Android经典的开源项目学习一下，大健发现了这么一篇帖子，不少好东西，分享在此。希望能够对[Android开发](http://android.eoe.cn/)的同学有所帮助。感谢作者的整理和分享。[tisa007](http://my.eoe.cn/123581)
+原帖在[这里。](http://www.eoeandroid.com/thread-272453-1-1.html)
 
 ###项目篇：
 - [Apollo音乐播放器](https://github.com/Splitter/android_packages_apps_apolloMod)：就一个播放器，但是实现的很好
@@ -43,7 +43,7 @@ description:
 - [chromeview](https://github.com/pwnall/chromeview)：我们都知道webview，也知道Android的chrome又自己的内核，这个项目就是把chrome的内核给导出来做成一个chromeview了，大家可以在自己的项目里用，有兴趣的可以玩玩
 - [picasso](https://github.com/square/picasso)：来自square的图片异步加载，好像是最近才开源的，API风格很独特，哥很喜欢~
 
-###顺便推荐大家几个网站：   
+###顺便推荐大家几个网站：
 
 - [github](https://github.com/)：各种项目很多，就是不容易挖掘，但是开发者必备
 - [oschina](http://www.oschina.net/)：曾经一般，现在越做越好了，很多开源项目；

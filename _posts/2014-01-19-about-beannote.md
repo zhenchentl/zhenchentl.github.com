@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 软文一篇：关于豆记，关于Beannote，关于云间牧场
+title: 软文一篇：关于Beannote，关于云间牧场
 category: release
 tags: 云间牧场
 keywords: Beannote,云间牧场

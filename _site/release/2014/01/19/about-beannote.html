@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-    <title>软文一篇：关于豆记，关于Beannote，关于云间牧场</title>
+    <title>软文一篇：关于Beannote，关于云间牧场</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
   </head>
   <body>
     <aside id="sidebar">
@@ -25,7 +26,7 @@
         </ul>
 
         <div id="tags__bottom">
-          <a href="mailto:" id="icon-email" class="tags-btn fontello"></a>
+          <a href="mailto:zhenchentl@gmail.com" id="icon-email" class="tags-btn fontello"></a>
           <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
         </div>
       </nav> <!-- end #tags -->
@@ -43,11 +44,13 @@
         
           <a class="read pl__all" href="/read/2014/10/24/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2014阅读书单</span><span class="pl__date">Oct 2014</span></a>
         
-          <a class="release pl__all" href="/release/2014/01/19/about-beannote.html"><span class="pl__circle"></span><span class="pl__title">软文一篇：关于豆记，关于Beannote，关于云间牧场</span><span class="pl__date">Jan 2014</span></a>
+          <a class="release pl__all" href="/release/2014/01/19/about-beannote.html"><span class="pl__circle"></span><span class="pl__title">软文一篇：关于Beannote，关于云间牧场</span><span class="pl__date">Jan 2014</span></a>
         
           <a class="technology pl__all" href="/technology/2013/10/28/dblp-introduction.html"><span class="pl__circle"></span><span class="pl__title">DBLP数据集简介及简单用法</span><span class="pl__date">Oct 2013</span></a>
         
           <a class="technology pl__all" href="/technology/2013/07/27/android-open-sources.html"><span class="pl__circle"></span><span class="pl__title">Android优秀开源项目【持续更新】</span><span class="pl__date">Jul 2013</span></a>
+        
+          <a class="about pl__all" href="/about/1990/08/18/about-me.html"><span class="pl__circle"></span><span class="pl__title">关于我</span><span class="pl__date">Aug 1990</span></a>
         
         </nav>
       </div> <!-- end #posts-list -->
@@ -56,7 +59,7 @@
     <div id="post">
       <div id="pjax">
         <article id="post__content">
-  <h1 id="post__title" data-identifier="20140119">软文一篇：关于豆记，关于Beannote，关于云间牧场</h1>
+  <h1 id="post__title" data-identifier="20140119">软文一篇：关于Beannote，关于云间牧场</h1>
   <p>我们是一帮大理工大学的学生，无证程序员，我们还有一些正在开发的比较好玩儿的产品，例如Beannote，BeanMemo，BeanReader，BeanCal，BeanTodo这些东西。。。什么，需要个中文名字？分别叫豆记，豆签，豆读，豆日，豆干儿怎么样。。。。反正跟豆子干上了！别问我为什么，老大和曦哥的说法是，<strong>我们是锤不扁，砸不烂，炒不爆的响当当的一锅铜豌豆！</strong>（其实我女朋友听了后，嘴里轻轻吐出四个字，“一群逗逼。。。”）。反正小米出各种米，我们就出各种豆！</p>
 
 <p>如果您真的喜欢我们的产品的话，可以到公司主页上去看看呢！<a href="http://www.beannote.com/">www.beannote.com</a></p>
@@ -99,15 +102,25 @@
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//release/2014/01/19/about-beannote.html&text=软文一篇：关于豆记，关于Beannote，关于云间牧场" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me//release/2014/01/19/about-beannote.html&text=软文一篇：关于Beannote，关于云间牧场" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//release/2014/01/19/about-beannote.html&title=软文一篇：关于豆记，关于Beannote，关于云间牧场" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//release/2014/01/19/about-beannote.html&title=软文一篇：关于Beannote，关于云间牧场" target="_blank"></a>
 </div> <!-- end #post__share -->
 
-<div id="disqus_thread">
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
-</div> <!-- end #disqus_thread -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'markchen'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
 <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
 

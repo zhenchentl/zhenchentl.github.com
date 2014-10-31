@@ -1,41 +1,41 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>place_your_blog_title_here</title>
-    <link>place_your_blog_url_here</link>
-    <atom:link href="place_your_blog_url_here/rss.xml" rel="self" type="application/rss+xml" />
-    <description>place_your_blog_description_here</description>
-    <language>place_your_blog_language_here</language>
-    <pubDate>Thu, 30 Oct 2014 23:42:48 +0800</pubDate>
-    <lastBuildDate>Thu, 30 Oct 2014 23:42:48 +0800</lastBuildDate>
+    <title>Mark Chen的博客</title>
+    <link>http://zhenchen.me</link>
+    <atom:link href="http://zhenchen.me/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Mark Chen的博客</description>
+    <language></language>
+    <pubDate>Fri, 31 Oct 2014 09:31:02 +0800</pubDate>
+    <lastBuildDate>Fri, 31 Oct 2014 09:31:02 +0800</lastBuildDate>
 
     
     <item>
       <title>【个人收藏】应用/系统</title>
-      <link>place_your_blog_url_here/like/2014/10/30/like-list.html</link>
+      <link>http://zhenchen.me/like/2014/10/30/like-list.html</link>
       <pubDate>30 Oct 2014</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/like/2014/10/30/like-list</guid>
+      <author>Mark Chen</author>
+      <guid>http://zhenchen.me/like/2014/10/30/like-list</guid>
       <description>
 </description>
     </item>
     
     <item>
       <title>2014阅读书单</title>
-      <link>place_your_blog_url_here/read/2014/10/24/book-list-of-2014.html</link>
+      <link>http://zhenchen.me/read/2014/10/24/book-list-of-2014.html</link>
       <pubDate>24 Oct 2014</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/read/2014/10/24/book-list-of-2014</guid>
+      <author>Mark Chen</author>
+      <guid>http://zhenchen.me/read/2014/10/24/book-list-of-2014</guid>
       <description>
 </description>
     </item>
     
     <item>
-      <title>软文一篇：关于豆记，关于Beannote，关于云间牧场</title>
-      <link>place_your_blog_url_here/release/2014/01/19/about-beannote.html</link>
+      <title>软文一篇：关于Beannote，关于云间牧场</title>
+      <link>http://zhenchen.me/release/2014/01/19/about-beannote.html</link>
       <pubDate>19 Jan 2014</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/release/2014/01/19/about-beannote</guid>
+      <author>Mark Chen</author>
+      <guid>http://zhenchen.me/release/2014/01/19/about-beannote</guid>
       <description>&lt;p&gt;我们是一帮大理工大学的学生，无证程序员，我们还有一些正在开发的比较好玩儿的产品，例如Beannote，BeanMemo，BeanReader，BeanCal，BeanTodo这些东西。。。什么，需要个中文名字？分别叫豆记，豆签，豆读，豆日，豆干儿怎么样。。。。反正跟豆子干上了！别问我为什么，老大和曦哥的说法是，&lt;strong&gt;我们是锤不扁，砸不烂，炒不爆的响当当的一锅铜豌豆！&lt;/strong&gt;（其实我女朋友听了后，嘴里轻轻吐出四个字，“一群逗逼。。。”）。反正小米出各种米，我们就出各种豆！&lt;/p&gt;
 
 &lt;p&gt;如果您真的喜欢我们的产品的话，可以到公司主页上去看看呢！&lt;a href=&quot;http://www.beannote.com/&quot;&gt;www.beannote.com&lt;/a&gt;&lt;/p&gt;
@@ -79,10 +79,10 @@
     
     <item>
       <title>DBLP数据集简介及简单用法</title>
-      <link>place_your_blog_url_here/technology/2013/10/28/dblp-introduction.html</link>
+      <link>http://zhenchen.me/technology/2013/10/28/dblp-introduction.html</link>
       <pubDate>28 Oct 2013</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/technology/2013/10/28/dblp-introduction</guid>
+      <author>Mark Chen</author>
+      <guid>http://zhenchen.me/technology/2013/10/28/dblp-introduction</guid>
       <description>&lt;p&gt;前一段时间利用大名鼎鼎的DBLP数据集做关于论文合作关系推荐的实验，感觉确实是一个非常不错的数据集，可挖掘的东西很多很多，在此对DBLP及其用法做一个简单介绍。&lt;/p&gt;
 
 &lt;h3 id=&quot;section&quot;&gt;简介&lt;/h3&gt;
@@ -246,10 +246,10 @@ def parserDblpXml():
     
     <item>
       <title>Android优秀开源项目【持续更新】</title>
-      <link>place_your_blog_url_here/technology/2013/07/27/android-open-sources.html</link>
+      <link>http://zhenchen.me/technology/2013/07/27/android-open-sources.html</link>
       <pubDate>27 Jul 2013</pubDate>
-      <author>place_your_name_here</author>
-      <guid>place_your_blog_url_here/technology/2013/07/27/android-open-sources</guid>
+      <author>Mark Chen</author>
+      <guid>http://zhenchen.me/technology/2013/07/27/android-open-sources</guid>
       <description>&lt;p&gt;一直想找些Android经典的开源项目学习一下，大健发现了这么一篇帖子，不少好东西，分享在此。希望能够对&lt;a href=&quot;http://android.eoe.cn/&quot;&gt;Android开发&lt;/a&gt;的同学有所帮助。感谢作者的整理和分享。&lt;a href=&quot;http://my.eoe.cn/123581&quot;&gt;tisa007&lt;/a&gt;
 原帖在&lt;a href=&quot;http://www.eoeandroid.com/thread-272453-1-1.html&quot;&gt;这里。&lt;/a&gt;&lt;/p&gt;
 
@@ -301,6 +301,35 @@ def parserDblpXml():
 关注java项目排名：大家戳 &lt;a href=&quot;https://github.com/languages/Java/most_watched&quot;&gt;这个网址&lt;/a&gt;
 搜索“Android”，并按star排序：戳 &lt;a href=&quot;https://github.com/search?q=android&amp;amp;type=Repositories&amp;amp;s=stars&quot;&gt;这里&lt;/a&gt; 直达
 最后，还有一招，就是关注些牛人，他们通常会关注或fork一些很有水平的项目。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>http://zhenchen.me/about/1990/08/18/about-me.html</link>
+      <pubDate>18 Aug 1990</pubDate>
+      <author>Mark Chen</author>
+      <guid>http://zhenchen.me/about/1990/08/18/about-me</guid>
+      <description>&lt;p&gt;来自大连理工大学的一枚研究僧，号称追求精致的生活，同时喜欢做一些成人之美的事。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;### 我的简历 ###
+- 个人简历（zh） | @&lt;a href=&quot;/resume-markchen-zh.pdf&quot;&gt;resume-markchen-zh&lt;/a&gt;
+- 个人简历（en） | @&lt;a href=&quot;http://dutphonelab.org/zhenchen/&quot;&gt;DUTPhoneLab&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;### 我的账号 ###
+- 个人邮箱 | @&lt;a href=&quot;zhenchentl@gmail.com&quot; title=&quot;zhenchentl@gmail.com&quot;&gt;zhenchentl@gmail.com&lt;/a&gt; &lt;br /&gt;
+- 新浪微博 | @&lt;a href=&quot;http://weibo.com/markchentl&quot; title=&quot;http://weibo.com/markchentl&quot;&gt;DUT_陈振&lt;/a&gt; &lt;br /&gt;
+- Github  |  @&lt;a href=&quot;https://github.com/zhenchentl&quot; title=&quot;https://github.com/zhenchentl&quot;&gt;zhenchentl&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;### 我的作品   &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;beannote（&lt;a href=&quot;http://www.beannote.com&quot;&gt;@www.beannote.com&lt;/a&gt;）&lt;/li&gt;
+  &lt;li&gt;每日一语&lt;a href=&quot;http://app.mi.com/detail/61735&quot;&gt;@小米应用商店&lt;/a&gt;）&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

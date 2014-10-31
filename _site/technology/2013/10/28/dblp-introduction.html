@@ -9,6 +9,7 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
   </head>
   <body>
     <aside id="sidebar">
@@ -25,7 +26,7 @@
         </ul>
 
         <div id="tags__bottom">
-          <a href="mailto:" id="icon-email" class="tags-btn fontello"></a>
+          <a href="mailto:zhenchentl@gmail.com" id="icon-email" class="tags-btn fontello"></a>
           <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
         </div>
       </nav> <!-- end #tags -->
@@ -43,11 +44,13 @@
         
           <a class="read pl__all" href="/read/2014/10/24/book-list-of-2014.html"><span class="pl__circle"></span><span class="pl__title">2014阅读书单</span><span class="pl__date">Oct 2014</span></a>
         
-          <a class="release pl__all" href="/release/2014/01/19/about-beannote.html"><span class="pl__circle"></span><span class="pl__title">软文一篇：关于豆记，关于Beannote，关于云间牧场</span><span class="pl__date">Jan 2014</span></a>
+          <a class="release pl__all" href="/release/2014/01/19/about-beannote.html"><span class="pl__circle"></span><span class="pl__title">软文一篇：关于Beannote，关于云间牧场</span><span class="pl__date">Jan 2014</span></a>
         
           <a class="technology pl__all" href="/technology/2013/10/28/dblp-introduction.html"><span class="pl__circle"></span><span class="pl__title">DBLP数据集简介及简单用法</span><span class="pl__date">Oct 2013</span></a>
         
           <a class="technology pl__all" href="/technology/2013/07/27/android-open-sources.html"><span class="pl__circle"></span><span class="pl__title">Android优秀开源项目【持续更新】</span><span class="pl__date">Jul 2013</span></a>
+        
+          <a class="about pl__all" href="/about/1990/08/18/about-me.html"><span class="pl__circle"></span><span class="pl__title">关于我</span><span class="pl__date">Aug 1990</span></a>
         
         </nav>
       </div> <!-- end #posts-list -->
@@ -224,10 +227,20 @@ def parserDblpXml():
   <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me//technology/2013/10/28/dblp-introduction.html&title=DBLP数据集简介及简单用法" target="_blank"></a>
 </div> <!-- end #post__share -->
 
-<div id="disqus_thread">
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
-</div> <!-- end #disqus_thread -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'markchen'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
 <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
 

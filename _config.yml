@@ -1,4 +1,4 @@
-highlighter: true
+pygments: true
 
 # 作者信息
 author:
@@ -12,3 +12,4 @@ author:
 title: Mark Chen的博客
 description: Mark Chen的博客
 url: http://zhenchen.me
+language: 中文

@@ -1,0 +1,78 @@
+---
+layout: index
+---
+
+<article id="post__content">
+  <h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
+  {{ content }}
+</article> <!-- end #post__content -->
+<br />
+
+<br />
+<div class="row">
+  {% for like in page.likes %}
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">{{ like.title }}</div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-4 col-xs-12 center">
+              <img src="{{ like.logo }}" alt="cover" class="img-thumbnail">
+            </div>
+            <div class="col-md-8 col-xs-12">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr><td>类别</td><td>{{ like.cat }}</td></tr>
+                  <tr><td style="width:80px;">作者</td><td>{{ like.author }}</td></tr>
+                  <tr><td>语言</td><td>{{ like.language }}</td></tr>
+                  <tr>
+                    <td>链接</td><td>
+                    <a href="{{ like.link }}" title="{{ like.link }}">访问链接</a>
+                  </td></tr>
+                  <!--
+                  <tr>
+                    <td>状态</td>
+                    <td>
+                      {% if book.status == '已读' %}
+                        <span class="label label-success">{{ book.status }}</span>
+                      {% elsif book.status == '在读' %}
+                        <span class="label label-info">{{ book.status }}</span>
+                      {% elsif book.status == '未读' %}
+                        <span class="label label-default">{{ book.status }}</span>
+                      {% endif %}
+                    </td></tr>
+                  -->
+                  <tr><td>赞点</td><td>{{ like.likewhat }}</td></tr>
+                  <tr><td>简介</td><td>{{ like.description }}</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>  
+        </div>
+      </div>      
+    </div>
+  {% endfor %}
+</div>
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me/{{ page.url }}&text={{ page.title }}" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me/{{ page.url }}&title={{ page.title }}" target="_blank"></a>
+</div> <!-- end #post__share -->
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'markchen'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+<p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>

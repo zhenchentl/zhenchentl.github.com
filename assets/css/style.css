@@ -310,7 +310,8 @@ a {
   border-radius: 4px;
   display: block; }
   .pl__all:hover {
-    background: rgba(43, 181, 92, 0.9); }
+    background: rgba(43, 181, 92, 0.9);
+    color: #fff; }
   .pl__all:visited > .pl__circle {
     background: #fafafa; }
   .pl__all:visited:hover > .pl__circle {

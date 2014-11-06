@@ -28,9 +28,9 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 
 - 打开 Sublime Text 3，按下`Control + '`调出 Console。
 - 将以下代码粘贴进命令行中并回车:
-
+{% highlight python %}
     import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-
+{% endhighlight %}
 - Sublime Text 2 请使用以下代码：
 
     import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
@@ -90,14 +90,14 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 - [SublimeTmpl](https://github.com/kairyou/SublimeTmpl)Sublime Text 新建文件的模板插件。模板支持自定义 `attr`（在settings-user里设置）。
 - [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel)为部分语言增强自动完成+成员/方法提示功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。支持所有Komodo Editor 支持的语言类型（需要自行配制）`JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.`此处仅介绍配置python.
 选择`Preferences-->Browser Packages...`进入相关的目录`SublimeCodeIntel\.codeintel`找到config.修改配置文件config。添加：
-
+{% highlight python %}
     {
         "Python": {
             "python":'D:/Program Files/Python26/python.exe',
             "pythonExtraPaths": ['D:\Python34','D:\Python34\DLLs','D:\Python34\Lib','D:\Python34\Lib\site-packages','D:\Python34\libs']
         }
     }
-
+{% endhighlight %}
 #配置Java编辑环境
 ###前提
 JDK已经安装好，Java环境已配置好。
@@ -136,7 +136,7 @@ public class test{
 ###BracketHighlighter配置
 
 Bracket settings-User
-
+{% highlight python %}
     {
         "bracket_styles": {
             // This particular style is used to highlight
@@ -190,9 +190,9 @@ Bracket settings-User
             }
         }
     }
-
+{% endhighlight %}
 Monokai Extended.sublime-package添加的代码
-
+{% highlight python %}
     <!-- BEGIN Bracket Highlighter plugin color modifications -->
     <dict>
         <key>name</key>
@@ -296,3 +296,4 @@ Monokai Extended.sublime-package添加的代码
         </dict>
     </dict>
     <!-- END Bracket Highlighter plugin color modifications -->
+{% endhighlight %}

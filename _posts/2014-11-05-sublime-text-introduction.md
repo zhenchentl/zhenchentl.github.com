@@ -77,26 +77,26 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed
 
 下面是一些我配置的常规插件。
 
-- [IMESupport](https://github.com/chikatoike/IMESupport)sublime text 有个BUG，那就是不支持中文的鼠标跟随（和PS类似输入的光标和文字候选框不在一起）,IMESupport可以完美解决这个问题。
-- [SideBarEnhancements](https://sublime.wbond.net/packages/SideBarEnhancements)SideBarEnhancements 是一款很实用的右键菜单增强插件，有以 diff 形式式显示未保存的修改、在文件管理器中显示该文件、复制文件路径、在侧边栏中定位该文件等功能，也有基础的诸如新建文件/目录，编辑，打开/运行，显示，在选择中/上级目录/项目中查找，剪切，复制，粘贴，重命名，删除，刷新等常见功能。
-- [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)通过本插件，您可以编辑并保存目前编码不被 Sublime Text 支持的文件，特别是中日韩用户使用的 GB2312，GBK，BIG5，EUC-KR，EUC-JP 等。ConvertToUTF8 同时支持 Sublime Text 2 和 3。
-- [Terminal](https://github.com/wbond/sublime_terminal)这个插件可以让你在Sublime中直接使用终端打开你的项目文件夹，并支持使用快捷键`Control + Shift + T`。
+- [IMESupport](https://github.com/chikatoike/IMESupport)。sublime text 有个BUG，那就是不支持中文的鼠标跟随（和PS类似输入的光标和文字候选框不在一起）,IMESupport可以完美解决这个问题。
+- [SideBarEnhancements](https://sublime.wbond.net/packages/SideBarEnhancements)。SideBarEnhancements 是一款很实用的右键菜单增强插件，有以 diff 形式式显示未保存的修改、在文件管理器中显示该文件、复制文件路径、在侧边栏中定位该文件等功能，也有基础的诸如新建文件/目录，编辑，打开/运行，显示，在选择中/上级目录/项目中查找，剪切，复制，粘贴，重命名，删除，刷新等常见功能。
+- [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)。通过本插件，您可以编辑并保存目前编码不被 Sublime Text 支持的文件，特别是中日韩用户使用的 GB2312，GBK，BIG5，EUC-KR，EUC-JP 等。ConvertToUTF8 同时支持 Sublime Text 2 和 3。
+- [Terminal](https://github.com/wbond/sublime_terminal)。这个插件可以让你在Sublime中直接使用终端打开你的项目文件夹，并支持使用快捷键`Control + Shift + T`。
 - [Git](https://sublime.wbond.net/packages/Git)这个插件会将Git整合进你的SublimeText，使的你可以在SublimeText中运行Git命令，包括添加，提交文件，查看日志，文件注解以及其它Git功能。
-- [GitGutter](https://github.com/jisaacks/GitGutter)在编辑器的凹槽区，依照 Git ，增加小图标来标识一行是否被插入、修改或删除。在 GitGutter 的 [readme](https://github.com/jisaacks/GitGutter)中有说明如何更改颜色图标来更新你的配色方案文件。
-- [BracketHighlighter](https://sublime.wbond.net/packages/BracketHighlighter)可以使括号高亮匹配，这个需要自己来配置配色方案。我的配置方案见最后（Bracket settings-User和主题文件Monokai Extended.sublime-package添加的代码）。
-- [Monokai Extended](https://github.com/jonschlinkert/sublime-monokai-extended)比较喜欢Soda Dark和Monokai，这里有Monokai Extended。这个 color scheme 是 Monokai Soda 的增强。如果再配合 Markdown Extended，将大大改善 Markdown 的语法高亮。
+- [GitGutter](https://github.com/jisaacks/GitGutter)。在编辑器的凹槽区，依照 Git ，增加小图标来标识一行是否被插入、修改或删除。在 GitGutter 的 [readme](https://github.com/jisaacks/GitGutter)中有说明如何更改颜色图标来更新你的配色方案文件。
+- [BracketHighlighter](https://sublime.wbond.net/packages/BracketHighlighter)。可以使括号高亮匹配，这个需要自己来配置配色方案。我的配置方案见最后（Bracket settings-User和主题文件Monokai Extended.sublime-package添加的代码）。
+- [Monokai Extended](https://github.com/jonschlinkert/sublime-monokai-extended)。比较喜欢Soda Dark和Monokai，这里有Monokai Extended。这个 color scheme 是 Monokai Soda 的增强。如果再配合 Markdown Extended，将大大改善 Markdown 的语法高亮。
 
 ##配置Markdown书写环境
-- [Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)一款Markdown高亮主题，安装后在右下角的语言栏选择Markdown Extended激活这种语言高亮，也可以在`Control + shift + p`启用set syntax:markdown extended
-- [Markdown preview](https://github.com/revolunet/sublimetext-markdown-preview)Sublime Text 提供了对Markdown语言的支持，Markdown preview可实现Markdown转换HTML并预览的功能。`Control + B`生成HTML文档，`Alt + m`可直接在浏览器打开。配置快捷键方式如下。
+- [Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)。一款Markdown高亮主题，安装后在右下角的语言栏选择Markdown Extended激活这种语言高亮，也可以在`Control + shift + p`启用set syntax:markdown extended
+- [Markdown preview](https://github.com/revolunet/sublimetext-markdown-preview)。Sublime Text 提供了对Markdown语言的支持，Markdown preview可实现Markdown转换HTML并预览的功能。`Control + B`生成HTML文档，`Alt + m`可直接在浏览器打开。配置快捷键方式如下。
 
 {% highlight python %}
 { "keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser"} }
 {% endhighlight %}
 
 ##配置Python编辑环境
-- [SublimeTmpl](https://github.com/kairyou/SublimeTmpl)Sublime Text 新建文件的模板插件。模板支持自定义 `attr`（在settings-user里设置）。
-- [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel)为部分语言增强自动完成+成员/方法提示功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。支持所有Komodo Editor 支持的语言类型（需要自行配制）`JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.`此处仅介绍配置python.
+- [SublimeTmpl](https://github.com/kairyou/SublimeTmpl)。Sublime Text 新建文件的模板插件。模板支持自定义 `attr`（在settings-user里设置）。
+- [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel)。为部分语言增强自动完成+成员/方法提示功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。支持所有Komodo Editor 支持的语言类型（需要自行配制）`JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.`此处仅介绍配置python.
 选择`Preferences-->Browser Packages...`进入相关的目录`SublimeCodeIntel\.codeintel`找到config.修改配置文件config。添加：
 
 {% highlight python %}
@@ -154,7 +154,7 @@ public class test{
 
 ###BracketHighlighter配置
 
-Bracket settings-User
+Bracket settings-User里的内容。
 
 {% highlight python %}
 {

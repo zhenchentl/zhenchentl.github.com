@@ -39,12 +39,14 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 **请求格式**：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外名字也是，Harry Potter,请求参数为`p/Potter:Harry`）
 **返回格式**：
 
-    <coauthors author="Jie Tang" urlpt="t/Tang:Jie">
-        <author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
-        <author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
-        <author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
-        ...
-    </coauthors>
+{% highlight XML %}
+<coauthors author="Jie Tang" urlpt="t/Tang:Jie">
+    <author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
+    <author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
+    <author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
+    ...
+</coauthors>
+{% endhighlight %}
 
 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。
 
@@ -53,23 +55,25 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 `http://dblp.uni-trier.de/rec/bibtex/journals/dke/TangCKW13.xml`（不好意思又是唐老师大作）。
 **返回格式**：
 
-    <dblp>
-        <article key="journals/dke/TangCKW13" mdate="2013-10-17">
-        <author>Jie Tang</author>
-        <author>Ling Chen</author>
-        <author>Irwin King</author>
-        <author>Jianyong Wang</author>
-        <title>
-            Introduction to Special section on Large-scale Data Mining.
-        </title>
-        <pages>355-356</pages>
-        <year>2013</year>
-        <volume>87</volume>
-        <journal>Data Knowl. Eng.</journal>
-        <ee>http://dx.doi.org/10.1016/j.datak.2013.05.001</ee>
-        <url>db/journals/dke/dke87.html#TangCKW13</url>
-        </article>
-    </dblp>
+{% highlight XML %}
+<dblp>
+    <article key="journals/dke/TangCKW13" mdate="2013-10-17">
+    <author>Jie Tang</author>
+    <author>Ling Chen</author>
+    <author>Irwin King</author>
+    <author>Jianyong Wang</author>
+    <title>
+        Introduction to Special section on Large-scale Data Mining.
+    </title>
+    <pages>355-356</pages>
+    <year>2013</year>
+    <volume>87</volume>
+    <journal>Data Knowl. Eng.</journal>
+    <ee>http://dx.doi.org/10.1016/j.datak.2013.05.001</ee>
+    <url>db/journals/dke/dke87.html#TangCKW13</url>
+    </article>
+</dblp>
+{% endhighlight %}
 
 注意：`article`的key唯一标识该文章，`journals`表示期刊，`dke`表示期刊名，（一般是期刊名首字母）
 其他字段很明显了，不解释。
@@ -78,30 +82,34 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 **请求格式**：author或者xauthor后面加搜索内容
 **返回格式**：模糊匹配到的作者列表
 
-    <authors>
-        <author urlpt="=/=Fayuan=:Kuo=Ming_Tang">Kuo-Ming Tang (Fayuan)</author>
-        <author urlpt="b/Basar:Tang=uuml=l_=Uuml==">Tangül Ü. Basar</author>
-        <author urlpt="b/Berre:Tanguy_Le">Tanguy Le Berre</author>
-        <author urlpt="b/Boespflug=Tanguy:Odile">Odile Boespflug-Tanguy</author>
-        <author urlpt="b/Bohnuud:Tanggis">Tanggis Bohnuud</author>
-        <author urlpt="b/Boyland:John_Tang">John Tang Boyland</author>
-        ...
-    </authors>
+{% highlight XML %}
+<authors>
+    <author urlpt="=/=Fayuan=:Kuo=Ming_Tang">Kuo-Ming Tang (Fayuan)</author>
+    <author urlpt="b/Basar:Tang=uuml=l_=Uuml==">Tangül Ü. Basar</author>
+    <author urlpt="b/Berre:Tanguy_Le">Tanguy Le Berre</author>
+    <author urlpt="b/Boespflug=Tanguy:Odile">Odile Boespflug-Tanguy</author>
+    <author urlpt="b/Bohnuud:Tanggis">Tanggis Bohnuud</author>
+    <author urlpt="b/Boyland:John_Tang">John Tang Boyland</author>
+    ...
+</authors>
+{% endhighlight %}
 
 - **搜索某作者所有论文**：`http://dblp.uni-trier.de/pers/xk/urlpt`
 **请求格式**：`http://dblp.uni-trier.de/pers/xk/t/Tang:Jie`
 **返回格式**：文章列表。给出的是`dblpkey`，即论文在DBLP中的唯一标识。
 
-    <dblpperson name="Jie Tang">
-        <dblpkey type="person record">homepages/t/JieTang</dblpkey>
-        <dblpkey>journals/dke/TangCKW13</dblpkey>
-        <dblpkey>journals/icl/BournakaTLL13</dblpkey>
-        <dblpkey>journals/jcst/TangTLLGG13</dblpkey>
-        <dblpkey>journals/joi/HeDTRB13</dblpkey>
-        <dblpkey>journals/kais/WangTFCTY13</dblpkey>
-        <dblpkey>journals/kbs/WangLZST13</dblpkey>
-        ...
-    </dblpperson>
+{% highlight XML %}
+<dblpperson name="Jie Tang">
+    <dblpkey type="person record">homepages/t/JieTang</dblpkey>
+    <dblpkey>journals/dke/TangCKW13</dblpkey>
+    <dblpkey>journals/icl/BournakaTLL13</dblpkey>
+    <dblpkey>journals/jcst/TangTLLGG13</dblpkey>
+    <dblpkey>journals/joi/HeDTRB13</dblpkey>
+    <dblpkey>journals/kais/WangTFCTY13</dblpkey>
+    <dblpkey>journals/kbs/WangLZST13</dblpkey>
+    ...
+</dblpperson>
+{% endhighlight %}
 
 ###DBLP可下载数据集
 

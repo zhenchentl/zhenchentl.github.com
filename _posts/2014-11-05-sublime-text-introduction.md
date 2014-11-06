@@ -29,11 +29,15 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 - 打开 Sublime Text 3，按下`Control + '`调出 Console。
 - 将以下代码粘贴进命令行中并回车:
 
+{% highlight python %}
     import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+{% endhighlight %}
 
 - Sublime Text 2 请使用以下代码：
 
+{% highlight python %}
     import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
+{% endhighlight %}
 
 - 重启 Sublime Text 3，如果在 `Preferences -> Package Settings`中见到`Package Control`这一项，就说明安装成功了。
 
@@ -46,28 +50,30 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 #常规配置
 每个人的编辑习惯不一样，作为轻微强迫症患者，我喜欢给自己的编辑器做一些设置，例如文件编码，主题，字体，字体大小，显示行号，设置Tab大小，空格替换制表，显示空白符，显示80字符打印线等等。我的初级Settings-User内容如下。
 
-    {
-        "font_size": 12,
-        "ignored_packages":
-        [
-            "Vintage"
-        ],
-        "font_face": "Consolas",
-        // 设置tab的大小为4
-        "tab_size": 4,
-        // 使用空格代替tab
-        "translate_tabs_to_spaces": true,
-        // 添加行宽标尺
-        "rulers": [80, 100],
-        // 显示空白字符
-        "draw_white_space": "all",
-        // 保存时自动去除行末空白
-        "trim_trailing_white_space_on_save": true,
-        // 保存时自动增加文件末尾换行
-        "ensure_newline_at_eof_on_save": true,
-        // 默认编码格式
-        "default_encoding": "UTF-8"
-    }
+{% highlight python %}
+{
+    "font_size": 12,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "font_face": "Consolas",
+    // 设置tab的大小为4
+    "tab_size": 4,
+    // 使用空格代替tab
+    "translate_tabs_to_spaces": true,
+    // 添加行宽标尺
+    "rulers": [80, 100],
+    // 显示空白字符
+    "draw_white_space": "all",
+    // 保存时自动去除行末空白
+    "trim_trailing_white_space_on_save": true,
+    // 保存时自动增加文件末尾换行
+    "ensure_newline_at_eof_on_save": true,
+    // 默认编码格式
+    "default_encoding": "UTF-8"
+}
+{% endhighlight %}
 
 下面是一些我配置的常规插件。
 
@@ -84,19 +90,23 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 - [Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)一款Markdown高亮主题，安装后在右下角的语言栏选择Markdown Extended激活这种语言高亮，也可以在`Control + shift + p`启用set syntax:markdown extended
 - [Markdown preview](https://github.com/revolunet/sublimetext-markdown-preview)Sublime Text 提供了对Markdown语言的支持，Markdown preview可实现Markdown转换HTML并预览的功能。`Control + B`生成HTML文档，`Alt + m`可直接在浏览器打开。配置快捷键方式如下。
 
+{% highlight python %}
     `{ "keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser"} }`
+{% endhighlight %}
 
 #配置Python编辑环境
 - [SublimeTmpl](https://github.com/kairyou/SublimeTmpl)Sublime Text 新建文件的模板插件。模板支持自定义 `attr`（在settings-user里设置）。
 - [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel)为部分语言增强自动完成+成员/方法提示功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。支持所有Komodo Editor 支持的语言类型（需要自行配制）`JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.`此处仅介绍配置python.
 选择`Preferences-->Browser Packages...`进入相关的目录`SublimeCodeIntel\.codeintel`找到config.修改配置文件config。添加：
 
-    {
-        "Python": {
-            "python":'D:/Program Files/Python26/python.exe',
-            "pythonExtraPaths": ['D:\Python34','D:\Python34\DLLs','D:\Python34\Lib','D:\Python34\Lib\site-packages','D:\Python34\libs']
-        }
+{% highlight python %}
+{
+    "Python": {
+        "python":'D:/Program Files/Python26/python.exe',
+        "pythonExtraPaths": ['D:\Python34','D:\Python34\DLLs','D:\Python34\Lib','D:\Python34\Lib\site-packages','D:\Python34\libs']
     }
+}
+{% endhighlight %}
 
 #配置Java编辑环境
 
@@ -106,16 +116,19 @@ JDK已经安装好，Java环境已配置好。
 ###配置编译环境
 - 在%Sublime Text 安装目录`%/package/`中找到`Java.sublime-package`,用好压或者其他压缩软件打开(重命名为`rar`文件双击就可以打开)，在里面找到`JavaC.sublime-build`并打开。里面添加：
 
-    {
-        "shell_cmd": "runJava.bat \"$file\"",
-        "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
-        "selector": "source.java",
-        //添加下面一段可支持编译中文，亲测Java可用
-        "encoding": "GBK"
-    }
+{% highlight python %}
+{
+    "shell_cmd": "runJava.bat \"$file\"",
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.java",
+    //添加下面一段可支持编译中文，亲测Java可用
+    "encoding": "GBK"
+}
+{% endhighlight %}
 
 - 在java的`JDK/bin`路径下，新建一个文件，命名为`runJava.bat`，里面内容为：
 
+{% highlight python %}
     @ECHO OFF
     cd %~dp1
     IF EXIST %~n1.class (
@@ -125,6 +138,7 @@ JDK已经安装好，Java环境已配置好。
     IF EXIST %~n1.class (
     java %~n1
     )
+{% endhighlight %}
 
 - 写一个Hello world 测试代码，使用`Control + B`运行之。
 
@@ -142,6 +156,7 @@ JDK已经安装好，Java环境已配置好。
 
 Bracket settings-User
 
+{% highlight python %}
     {
         "bracket_styles": {
             // This particular style is used to highlight
@@ -195,9 +210,11 @@ Bracket settings-User
             }
         }
     }
+{% endhighlight %}
 
 Monokai Extended.sublime-package添加的代码
 
+{% highlight python  %}
     <!-- BEGIN Bracket Highlighter plugin color modifications -->
     <dict>
         <key>name</key>
@@ -301,3 +318,4 @@ Monokai Extended.sublime-package添加的代码
         </dict>
     </dict>
     <!-- END Bracket Highlighter plugin color modifications -->
+{% endhighlight %}

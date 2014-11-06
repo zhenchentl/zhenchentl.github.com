@@ -129,11 +129,11 @@ JDK已经安装好，Java环境已配置好。
 - 写一个Hello world 测试代码，使用`Control + B`运行之。
 
 {% highlight java %}
-public class test{
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public class test{
+        public static void main(String[] args) {
+            System.out.println("Hello world!");
+        }
     }
-}
 {% endhighlight %}
 
 #附录
@@ -301,4 +301,3 @@ Monokai Extended.sublime-package添加的代码
         </dict>
     </dict>
     <!-- END Bracket Highlighter plugin color modifications -->
-

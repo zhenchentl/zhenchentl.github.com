@@ -50,7 +50,7 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 #常规配置
 每个人的编辑习惯不一样，作为轻微强迫症患者，我喜欢给自己的编辑器做一些设置，例如文件编码，主题，字体，字体大小，显示行号，设置Tab大小，空格替换制表，显示空白符，显示80字符打印线等等。我的初级Settings-User内容如下。
 
-{% highlight %}
+{% highlight python %}
 {
     "font_size": 12,
     "ignored_packages":

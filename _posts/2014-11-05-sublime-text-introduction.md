@@ -89,8 +89,7 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 #配置Python编辑环境
 - [SublimeTmpl](https://github.com/kairyou/SublimeTmpl)Sublime Text 新建文件的模板插件。模板支持自定义 `attr`（在settings-user里设置）。
 - [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel)为部分语言增强自动完成+成员/方法提示功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。支持所有Komodo Editor 支持的语言类型（需要自行配制）`JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.`此处仅介绍配置python.
-选择`Preferences-->Browser Packages...`进入相关的目录`SublimeCodeIntel\.codeintel`找到config.修改配置文件config
-添加
+选择`Preferences-->Browser Packages...`进入相关的目录`SublimeCodeIntel\.codeintel`找到config.修改配置文件config。添加：
 
     {
         "Python": {
@@ -135,6 +134,7 @@ public class test{
 {% endhighlight %}
 #附录
 ###BracketHighlighter配置
+
 Bracket settings-User
 
     {
@@ -190,6 +190,7 @@ Bracket settings-User
             }
         }
     }
+
 Monokai Extended.sublime-package添加的代码
 
     <!-- BEGIN Bracket Highlighter plugin color modifications -->

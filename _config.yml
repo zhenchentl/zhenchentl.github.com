@@ -1,4 +1,4 @@
-pygments: true
+highlighter: pygments
 
 # 作者信息
 author:

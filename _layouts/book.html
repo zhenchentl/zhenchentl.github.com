@@ -10,8 +10,8 @@ layout: index
 
 <div>
   {% for book in page.books %}
-  <div >
-    <table width="100%" style="border:1px solid #d9d9d9">
+  <div style="border:1px solid #d9d9d9; -webkit-box-shadow:2px 2px 5px #d9d9d9; margin: 10px">
+    <table width="100%">
       <tbody>
       <tr><td colspan="3"><p style="padding: .4em .6em .4em;font-weight: bold;line-height: 1;color: #fff;text-align: center;white-space: nowrap;vertical-align: baseline;background-color: #777"> {{ book.title }} </p></td></tr>
         <td rowspan="6" width=1><img src="{{ book.cover }}"></td>

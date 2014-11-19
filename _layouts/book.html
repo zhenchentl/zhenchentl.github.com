@@ -16,15 +16,15 @@ layout: index
     <table width="100%">
       <tbody>
         <td rowspan="6" width=1><img src="{{ book.cover }}"></td>
-        <tr><td style="width:80px;">【作者】</td><td style="table-layout:fixed">{{ book.author }}</td></tr>
-        <tr><td>【出版】</td><td>{{ book.publisher }}</td></tr>
-        <tr><td>【语言】</td><td>{{ book.language }}</td></tr>
+        <tr><td style="width:80px; color:#666">作者：</td><td style="table-layout:fixed">{{ book.author }}</td></tr>
+        <tr><td style="color:#666">出版：</td><td>{{ book.publisher }}</td></tr>
+        <tr><td style="color:#666">语言：</td><td>{{ book.language }}</td></tr>
         <tr>
-          <td>【链接】</td><td>
+          <td style="color:#666">链接：</td><td>
           <a href="{{ book.link }}" title="{{ book.link }}" target="_blank" style="color: #29A284;">图书链接</a>
         </td></tr>
         <tr>
-          <td>【状态】</td>
+          <td style="color:#666">状态：</td>
           <td style="display: inline;padding: .2em .6em .3em;font-size: 75%;font-weight: bold;line-height: 1;color: #fff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;
           {% if book.status == '已读' %}
             background-color: #5cb85c;
@@ -36,7 +36,7 @@ layout: index
           {{ book.status }}
           </td>
         </tr>
-        <tr><td colspan="3"><b>评论：</b>{{ book.description }}</td></tr>
+        <tr><td colspan="3"><span style="color:#666">评论：</span>{{ book.description }}</td></tr>
       </tbody>
     </table>
   </div>

@@ -14,9 +14,10 @@ if ($(window).width() <= 1280) {
     tag1       = $('.pl__all'),
     tag2       = $('.technology'),
     tag3       = $('.release'),
-    tag4       = $('.read'),
-    tag5       = $('.like'),
-    tag6       = $('.about');
+    tag4       = $('.life'),
+    tag5       = $('.read'),
+    tag6       = $('.like'),
+    tag7       = $('.about');
 
 var sidebar    = $('#sidebar'),
     container  = $('#post'),

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python Challenge 1-6通关攻略
+title: Python Challenge 0-6通关攻略
 category: technology
 tags:
 - Python Challenge

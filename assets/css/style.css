@@ -111,11 +111,11 @@ a {
   overflow: hidden;
   display: block; }
   #avatar:hover {
-    -webkit-animation: spin .35s linear infinite;
-    -moz-animation: spin .35s linear infinite;
-    -ms-animation: spin .35s linear infinite;
-    -o-animation: spin .35s linear infinite;
-    animation: spin .35s linear infinite; }
+    -webkit-animation: spin 5s linear infinite;
+    -moz-animation: spin 5s linear infinite;
+    -ms-animation: spin 5s linear infinite;
+    -o-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #avatar {
       background: url(/assets/img/avatar@2X.png);

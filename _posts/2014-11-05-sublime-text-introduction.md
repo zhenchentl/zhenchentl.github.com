@@ -29,15 +29,11 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 - 打开 Sublime Text 3，按下`Control + '`调出 Console。
 - 将以下代码粘贴进命令行中并回车:
 
-{% highlight python %}
-import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-{% endhighlight %}
+`import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())`
 
 - Sublime Text 2 请使用以下代码：
 
-{% highlight python %}
-import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
-{% endhighlight %}
+`import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')`
 
 - 重启 Sublime Text 3，如果在 `Preferences -> Package Settings`中见到`Package Control`这一项，就说明安装成功了。
 
@@ -80,11 +76,16 @@ import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed
 - [IMESupport](https://github.com/chikatoike/IMESupport)。sublime text 有个BUG，那就是不支持中文的鼠标跟随（和PS类似输入的光标和文字候选框不在一起）,IMESupport可以完美解决这个问题。
 - [SideBarEnhancements](https://sublime.wbond.net/packages/SideBarEnhancements)。SideBarEnhancements 是一款很实用的右键菜单增强插件，有以 diff 形式式显示未保存的修改、在文件管理器中显示该文件、复制文件路径、在侧边栏中定位该文件等功能，也有基础的诸如新建文件/目录，编辑，打开/运行，显示，在选择中/上级目录/项目中查找，剪切，复制，粘贴，重命名，删除，刷新等常见功能。
 - [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)。通过本插件，您可以编辑并保存目前编码不被 Sublime Text 支持的文件，特别是中日韩用户使用的 GB2312，GBK，BIG5，EUC-KR，EUC-JP 等。ConvertToUTF8 同时支持 Sublime Text 2 和 3。
+- [SublimeTmpl](https://github.com/kairyou/SublimeTmpl)。为新建文件提供模板。
+- [FileDiffs](https://github.com/colinta/SublimeFileDiffs)。强大的文件diff工具。
+- [Latex Tools](https://github.com/SublimeText/LaTeXTools)。支持用sublime text编辑及编译latex文档。
 - [Terminal](https://github.com/wbond/sublime_terminal)。这个插件可以让你在Sublime中直接使用终端打开你的项目文件夹，并支持使用快捷键`Control + Shift + T`。
 - [Git](https://sublime.wbond.net/packages/Git)这个插件会将Git整合进你的SublimeText，使的你可以在SublimeText中运行Git命令，包括添加，提交文件，查看日志，文件注解以及其它Git功能。
 - [GitGutter](https://github.com/jisaacks/GitGutter)。在编辑器的凹槽区，依照 Git ，增加小图标来标识一行是否被插入、修改或删除。在 GitGutter 的 [readme](https://github.com/jisaacks/GitGutter)中有说明如何更改颜色图标来更新你的配色方案文件。
 - [BracketHighlighter](https://sublime.wbond.net/packages/BracketHighlighter)。可以使括号高亮匹配，这个需要自己来配置配色方案。我的配置方案见最后（Bracket settings-User和主题文件Monokai Extended.sublime-package添加的代码）。
 - [Monokai Extended](https://github.com/jonschlinkert/sublime-monokai-extended)。比较喜欢Soda Dark和Monokai，这里有Monokai Extended。这个 color scheme 是 Monokai Soda 的增强。如果再配合 Markdown Extended，将大大改善 Markdown 的语法高亮。
+- [Cobalt2](https://github.com/wesbos/cobalt2)。除了上述Soda Dark和Monokai主题，最近又发现了一款十分漂亮和强大的主题：Cobalt2。最经典的是side bar的文件图标，看图就知道了。text内容可搭配其他主题，当前采用的是Cobalt2 + Solarized(Dark)。
+![](https://camo.githubusercontent.com/8b97714849ae20458b16ee3c50b2b95b84fb46b5/687474703a2f2f7765732e696f2f59496a6e2f636f6e74656e74)
 
 ##配置Markdown书写环境
 - [Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)。一款Markdown高亮主题，安装后在右下角的语言栏选择Markdown Extended激活这种语言高亮，也可以在`Control + shift + p`启用set syntax:markdown extended

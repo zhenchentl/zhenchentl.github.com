@@ -118,7 +118,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 其中：**dblp.xml**是我们需要的数据集。**dblp.dtd**是格式说明文件。解析的时候和前者放在一
 起。
 
-**dblp.xml文件格式**：除<dblp>标签外的一级标签有：**Article**，**inproceedings**，  **proceedings**，  **book**，  **incollection**， **phdthesis**， **mastersthesis** ，**www**
+**dblp.xml文件格式**：除`<dblp>`标签外的一级标签有：**Article**，**inproceedings**，  **proceedings**，  **book**，  **incollection**， **phdthesis**， **mastersthesis** ，**www**
 
 ###我对DBLP的处理
 

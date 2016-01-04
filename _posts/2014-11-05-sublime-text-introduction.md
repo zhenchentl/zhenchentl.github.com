@@ -48,26 +48,35 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 
 {% highlight python %}
 {
-    "font_size": 12,
+    "color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+    "default_encoding": "UTF-8",
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "font_face": "Consolas",
+    "font_size": 16,
+    "ha_style": "filled",
     "ignored_packages":
     [
         "Vintage"
     ],
-    "font_face": "Consolas",
-    // 设置tab的大小为4
+    "indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
+    "original_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "rulers":
+    [
+        80,
+        100
+    ],
+    "sidebar_font_big": true,
+    "sidebar_medium": true,
+    "spell_check": false,
     "tab_size": 4,
-    // 使用空格代替tab
+    "theme": "Cobalt2.sublime-theme",
     "translate_tabs_to_spaces": true,
-    // 添加行宽标尺
-    "rulers": [80, 100],
-    // 显示空白字符
-    "draw_white_space": "all",
-    // 保存时自动去除行末空白
-    "trim_trailing_white_space_on_save": true,
-    // 保存时自动增加文件末尾换行
-    "ensure_newline_at_eof_on_save": true,
-    // 默认编码格式
-    "default_encoding": "UTF-8"
+    "trim_trailing_white_space_on_save": true
 }
 {% endhighlight %}
 

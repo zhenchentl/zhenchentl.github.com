@@ -142,9 +142,6 @@
   background: $toc-bg
   overflow-y: auto
   -webkit-overflow-scrolling: touch
-  &:hover
-    background: rgba(43, 181, 92, 0.9)
-    color: #fff
   &:after
     content: ""
     float: left
@@ -182,5 +179,6 @@
     transition: transform .15s linear
   &:visited:before
     color: $toc-bullet-read
-  &:hover:before
-    animation: joggle .6s linear
+  &:hover
+    background: rgba(43, 181, 92, 0.9)
+    color: #fff

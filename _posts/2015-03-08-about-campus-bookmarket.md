@@ -2,7 +2,7 @@
 layout: post
 title: 软文一篇：校园淘书
 category: release
-tags: 云间牧场
+tags: 推广
 keywords: 校园淘书,云间牧场
 description:
 ---

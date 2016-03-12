@@ -2,9 +2,7 @@
 layout: post
 title: Sublime Text 配置Python,Java,Markdown
 category: technology
-tags:
-- Sublime Text
-- 开发环境
+tags: 技术
 keywords: Sublime Text,开发环境
 description:
 ---

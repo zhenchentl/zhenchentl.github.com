@@ -2,9 +2,7 @@
 layout: post
 title: Python Challenge 7-13通关攻略
 category: technology
-tags:
-- Python Challenge
-- 攻略
+tags: 技术
 keywords: Python Challenge,攻略
 description:
 ---

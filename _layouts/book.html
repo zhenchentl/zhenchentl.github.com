@@ -1,68 +1,69 @@
 ---
-layout: index
+layout: default
 ---
 
-<article id="post__content">
-  <h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
-  {{ content }}
-</article> <!-- end #post__content -->
+<article class="post container">
+  <div class="post-meta">
+    <span class="post-meta-span date">{{ page.date | date:"%Y %B %d" }}</span>
+    {% if page.tags.size > 0 %}
+    <span class="post-meta-span tag">{{ page.tags | join: ', ' }}</span>
+    {% endif %}
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <div>
+    {% for book in page.books %}
+    <div style="border:1px solid #d9d9d9; -webkit-box-shadow:4px 4px 8px #d9d9d9; padding: 10px; background-color: #fff">
+      <div style="padding: .4em .6em .4em;font-weight: bold;font-size: 1.5em;line-height: 1;color: inherit;text-align: center;white-space: nowrap;overflow: hidden;vertical-align: baseline;background-color: #fff"> {{ book.title }} </div>
+      <p style="border : 1px dashed #d9d9d9" />
+      <table width="100%">
+        <tbody>
+          <td rowspan="6" width="100px"><img src="{{ book.cover }}"></td>
+          <tr><td align="right" style="width:80px; color:#666">作者：</td><td style="table-layout:fixed">{{ book.author }}</td></tr>
+          <tr><td align="right" style="color:#666">出版：</td><td>{{ book.publisher }}</td></tr>
+          <tr><td align="right" style="color:#666">语言：</td><td>{{ book.language }}</td></tr>
+          <tr>
+            <td align="right" style="color:#666">链接：</td><td>
+            <a href="{{ book.link }}" title="{{ book.link }}" target="_blank" style="color: #29A284;">图书链接</a>
+          </td></tr>
+          <tr>
+            <td align="right" style="color:#666">状态：</td>
+            <td style="display: inline;padding: .2em .6em .3em;font-size: 75%;font-weight: bold;line-height: 1;color: #fff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;
+            {% if book.status == '已读' %}
+              background-color: #5cb85c;
+            {% elsif book.status == '在读' %}
+              background-color: #5bc0de;
+            {% elsif book.status == '未读' %}
+              background-color: #777;
+            {% endif %}">
+            {{ book.status }}
+            </td>
+          </tr>
+          <!-- <tr><td colspan="3"><span style="color:#666">评论：</span>{{ book.description }}</td></tr> -->
+        </tbody>
+      </table>
+    <p style="border : 1px dashed #d9d9d9" />
+    <div style="padding: .4em .6em .4em;color: inherit><span style="color:#666">评论：</span> {{ book.description }} </div>
+    </div>
+    <br/>
+    {% endfor %}
+  </div>
+</article>
 <br />
 
-<div>
-  {% for book in page.books %}
-  <div style="border:1px solid #d9d9d9; -webkit-box-shadow:2px 2px 5px #d9d9d9; padding: 10px">
-    <div style="padding: .4em .6em .4em;font-weight: bold;line-height: 1;color: inherit;text-align: center;white-space: nowrap;vertical-align: baseline;background-color: #fff"> {{ book.title }} </div>
-    <hr style="border : 1px dashed #d9d9d9;" />
-    <table width="100%">
-      <tbody>
-        <td rowspan="6" width=1><img src="{{ book.cover }}"></td>
-        <tr><td align="right" style="width:80px; color:#666">作者：</td><td style="table-layout:fixed">{{ book.author }}</td></tr>
-        <tr><td align="right" style="color:#666">出版：</td><td>{{ book.publisher }}</td></tr>
-        <tr><td align="right" style="color:#666">语言：</td><td>{{ book.language }}</td></tr>
-        <tr>
-          <td align="right" style="color:#666">链接：</td><td>
-          <a href="{{ book.link }}" title="{{ book.link }}" target="_blank" style="color: #29A284;">图书链接</a>
-        </td></tr>
-        <tr>
-          <td align="right" style="color:#666">状态：</td>
-          <td style="display: inline;padding: .2em .6em .3em;font-size: 75%;font-weight: bold;line-height: 1;color: #fff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;
-          {% if book.status == '已读' %}
-            background-color: #5cb85c;
-          {% elsif book.status == '在读' %}
-            background-color: #5bc0de;
-          {% elsif book.status == '未读' %}
-            background-color: #777;
-          {% endif %}">
-          {{ book.status }}
-          </td>
-        </tr>
-        <tr><td colspan="3"><span style="color:#666">评论：</span>{{ book.description }}</td></tr>
-      </tbody>
-    </table>
+<div class="post-share">
+  <div class="container">
+    <a href="https://twitter.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" target="_blank" class="post-share-icon twitter"></a>
+    <a href="https://www.evernote.com/clip.action?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" target="_blank" class="post-share-icon evernote"></a>
+    <a href="http://service.weibo.com/share/share.php?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" target="_blank" class="post-share-icon weibo"></a>
   </div>
-  <br/>
-  {% endfor %}
 </div>
-<div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://zhenchen.me/{{ page.url }}&text={{ page.title }}" target="_blank"></a>
-  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://zhenchen.me/{{ page.url }}&title={{ page.title }}" target="_blank"></a>
-</div> <!-- end #post__share -->
 
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'markchen'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-<p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a></p>
+{% if site.disqus_shortname %}
+<div class="comment container">
+  <div id="disqus_thread">
+    <a href=""></a>
+  </div>
+</div>
+{% endif %}

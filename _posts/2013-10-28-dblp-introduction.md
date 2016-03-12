@@ -2,17 +2,17 @@
 layout: post
 title: DBLP数据集简介及简单用法
 category: technology
-tags:
-- DBLP
-- 数据集
+tags: 技术
 keywords: DBLP,数据集
 description:
 ---
 
+* 目录
+{:toc}
+
 前一段时间利用大名鼎鼎的DBLP数据集做关于论文合作关系推荐的实验，感觉确实是一个非常不错的数据集，可挖掘的东西很多很多，在此对DBLP及其用法做一个简单介绍。
 
-###简介
-
+### 简介
 **DBLP**——**Digital Bibliography & Library Project**的缩写。这里是[DBLP的主页](http://www.informatik.uni-trier.de/~ley/db/)
 
 DBLP是计算机领域内对研究的成果以作者为核心的一个计算机类英文文献的集成数据库系统，按年代列出了作者的科研成果。包括国际期刊和会议等公开发表的论文。DBLP没有提供对中文文献的收录和检索功能，国内类似的权威期刊及重要会议论文集成检索系统有C-DBLP。
@@ -25,11 +25,11 @@ DBLP在学术界声誉很高，而且很多论文及实验都是基于DBLP的。
 
 另外，DBLP数据开放免费，版权和许可[在这](http://www.informatik.uni-trier.de/~ley/db/copyright.html)。
 
-###提供的服务
+### 提供的服务
 
 DBLP的支持团队基于DBLP数据做了很多工作。提供各种搜索、统计等服务，并提供了API和可下载数据集。[这里](http://dblps.uni-trier.de/~mwagner/statistics/)有些有意思的统计数据，并用google chart tool做了可视化处理。例如：出版物类型分布，每个期刊或会议的作者数，每年论文数目，每个作者的合作者数目，并且每年、每月都会做些全局数据统计。
 
-###DBLP的API
+### DBLP的API
 
 DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度没较高要求的话，可使用它的API。[这里](http://dblp.uni-trier.de/xml/docu/dblpxmlreq.pdf)官网发了篇文章，里面解释了BDLP的基础API以及用法，还有几个例子（java、C）。有个是经典的“两个作者在合作网络上的最短路径”。
 
@@ -39,14 +39,14 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 **请求格式**：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外名字也是，Harry Potter,请求参数为`p/Potter:Harry`）
 **返回格式**：
 
-{% highlight XML %}
+```
 <coauthors author="Jie Tang" urlpt="t/Tang:Jie">
     <author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
     <author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
     <author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
     ...
 </coauthors>
-{% endhighlight %}
+```
 
 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。
 
@@ -55,7 +55,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 `http://dblp.uni-trier.de/rec/bibtex/journals/dke/TangCKW13.xml`（不好意思又是唐老师大作）。
 **返回格式**：
 
-{% highlight XML %}
+```
 <dblp>
     <article key="journals/dke/TangCKW13" mdate="2013-10-17">
     <author>Jie Tang</author>
@@ -73,7 +73,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
     <url>db/journals/dke/dke87.html#TangCKW13</url>
     </article>
 </dblp>
-{% endhighlight %}
+```
 
 注意：`article`的key唯一标识该文章，`journals`表示期刊，`dke`表示期刊名，（一般是期刊名首字母）
 其他字段很明显了，不解释。
@@ -82,7 +82,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 **请求格式**：author或者xauthor后面加搜索内容
 **返回格式**：模糊匹配到的作者列表
 
-{% highlight XML %}
+```
 <authors>
     <author urlpt="=/=Fayuan=:Kuo=Ming_Tang">Kuo-Ming Tang (Fayuan)</author>
     <author urlpt="b/Basar:Tang=uuml=l_=Uuml==">Tangül Ü. Basar</author>
@@ -92,13 +92,13 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
     <author urlpt="b/Boyland:John_Tang">John Tang Boyland</author>
     ...
 </authors>
-{% endhighlight %}
+```
 
 - **搜索某作者所有论文**：`http://dblp.uni-trier.de/pers/xk/urlpt`
 **请求格式**：`http://dblp.uni-trier.de/pers/xk/t/Tang:Jie`
 **返回格式**：文章列表。给出的是`dblpkey`，即论文在DBLP中的唯一标识。
 
-{% highlight XML %}
+```
 <dblpperson name="Jie Tang">
     <dblpkey type="person record">homepages/t/JieTang</dblpkey>
     <dblpkey>journals/dke/TangCKW13</dblpkey>
@@ -109,9 +109,9 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
     <dblpkey>journals/kbs/WangLZST13</dblpkey>
     ...
 </dblpperson>
-{% endhighlight %}
+```
 
-###DBLP可下载数据集
+### DBLP可下载数据集
 
 下载地址[在这](http://dblp.uni-trier.de/xml/) 。
 
@@ -120,7 +120,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 
 **dblp.xml文件格式**：除`<dblp>`标签外的一级标签有：**Article**，**inproceedings**，  **proceedings**，  **book**，  **incollection**， **phdthesis**， **mastersthesis** ，**www**
 
-###我对DBLP的处理
+### 我对DBLP的处理
 
 **语言**：Python
 
@@ -130,8 +130,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 
 sax是一个基于事件流的xml解析工具，边读文件边解析，好处是无内存限制，可以解析处理较大的xml文件。其代码如下。
 
-
-{% highlight python %}
+```
 from xml.sax import handler, make_parser
 paperTag = ('article','inproceedings','proceedings','book',
                    'incollection','phdthesis','mastersthesis','www')
@@ -156,9 +155,9 @@ class mHandler(handler.ContentHandler):
         f.close()
     if __name__ == '__name__':
     parserDblpXml()
-{% endhighlight %}
+```
 
-###简单总结
+### 简单总结
 
 总的来说，DBLP集成元素不多，只有最基本的论文题目，时间，作者，发表类型及期刊或会议名称等等。可能很多人想要的标签、关键词都没有。但是，基于DBLP数据集这些基本的元素，可以挖掘、利用的也是很多。例如官网给出的统计信息，就能引申出很多东西。
 

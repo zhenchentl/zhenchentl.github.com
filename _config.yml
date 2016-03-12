@@ -1,13 +1,3 @@
-# highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - fenced_code_blocks
-    - no_intra_emphasis
-    - strikethrough
-    - autolink
-    - tables
-
 # 作者信息
 author:
   name: Damon Chen

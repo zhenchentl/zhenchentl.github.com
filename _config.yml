@@ -30,4 +30,4 @@ sass:
 gems:
   - jekyll-sitemap
 
-filter: category
+# filter: category

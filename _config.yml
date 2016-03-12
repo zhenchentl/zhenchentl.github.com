@@ -1,17 +1,17 @@
 # Site settings
-title: Peiwen Lu
+title: Damon Chen
 email: "&#104;&#105;&#064;&#112;&#101;&#105;&#119;&#101;&#110;&#046;&#108;&#117;"
-description: "Peiwen Lu's front-end blog."
+description: "Damon Chen 的博客"
 baseurl: ""
-url: "http://peiwen.lu"
+url: "http://www.zhenchen.me"
 permalink: /:year/:title
 
 
 # Social account
-twitter:  PeiwenLu
-# weibo:    ID
-github:   P233
-codepen:  P233
+# twitter:  PeiwenLu
+# weibo:    2509911980
+github:   zhenchentl
+# codepen:  P233
 # dribbble: username
 
 
@@ -20,7 +20,7 @@ codepen:  P233
 
 
 # Google Analytics
-google_analytics: UA-60830414-1
+# google_analytics: UA-60830414-1
 
 
 # Build settings

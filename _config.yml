@@ -1,13 +1,31 @@
-# 作者信息
-author:
-  name: Damon Chen
-  email: zhenchentl@gmail.com
-  link: http://zhenchen.me
-  weibo: http://weibo.com/markchentl
-  github: http://github.com/zhenchentl
+# Site settings
+title: Peiwen Lu
+email: "&#104;&#105;&#064;&#112;&#101;&#105;&#119;&#101;&#110;&#046;&#108;&#117;"
+description: "Peiwen Lu's front-end blog."
+baseurl: ""
+url: "http://peiwen.lu"
+permalink: /:year/:title
 
-# 站点信息
-title: Damon Chen的博客
-description: Damon Chen的博客
-url: http://zhenchen.me
-language: 中文
+
+# Social account
+twitter:  PeiwenLu
+# weibo:    ID
+github:   P233
+codepen:  P233
+# dribbble: username
+
+
+# Comment
+# disqus_shortname:
+
+
+# Google Analytics
+google_analytics: UA-60830414-1
+
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap

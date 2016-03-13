@@ -13,17 +13,17 @@ description:
 
 Sublime Text 有两个版本，ST3是Beta版，但是至今没觉得有什么影响使用的bug，我用的是[Sublime Text 3 ](http://www.sublimetext.com/3)。
 
-##插件安装
+## 插件安装
 
 Sublime Text 插件安装很简单，一般有两种方式。
 
-###离线安装
+### 离线安装
 
 - 下载插件。
 - 解压后，放入`Packages`目录中。找到`Packages`目录的简单方法是在Sublime Text 3 的`Preferences`菜单中选择`Browse Packages`。
 - 重启 Sublime Text 3.
 
-###在线安装
+### 在线安装
 
 Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https://sublime.wbond.net/)。通过 Sublime Package Control，安装、升级和卸载 Package 也变得轻松写意了。
 
@@ -44,7 +44,7 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 2. 输入`install`调出`Package Control: Install Package`选项，按下回车。
 3. 输入插件名称并回车，稍等几秒就安装好了，有的插件可能需要重启Sublime Text才能激活。
 
-##常规配置
+## 常规配置
 
 每个人的编辑习惯不一样，作为轻微强迫症患者，我喜欢给自己的编辑器做一些设置，例如文件编码，主题，字体，字体大小，显示行号，设置Tab大小，空格替换制表，显示空白符，显示80字符打印线等等。我的初级Settings-User内容如下。
 
@@ -98,7 +98,7 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 - [Cobalt2](https://github.com/wesbos/cobalt2)。除了上述Soda Dark和Monokai主题，最近又发现了一款十分漂亮和强大的主题：Cobalt2。最经典的是side bar的文件图标，看图就知道了。text内容可搭配其他主题，当前采用的是Cobalt2 + Solarized(Dark)。
 ![](https://camo.githubusercontent.com/8b97714849ae20458b16ee3c50b2b95b84fb46b5/687474703a2f2f7765732e696f2f59496a6e2f636f6e74656e74)
 
-##配置Markdown书写环境
+## 配置Markdown书写环境
 
 - [Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)。一款Markdown高亮主题，安装后在右下角的语言栏选择Markdown Extended激活这种语言高亮，也可以在`Control + shift + p`启用set syntax:markdown extended
 - [Markdown preview](https://github.com/revolunet/sublimetext-markdown-preview)。Sublime Text 提供了对Markdown语言的支持，Markdown preview可实现Markdown转换HTML并预览的功能。`Control + B`生成HTML文档，`Alt + m`可直接在浏览器打开。配置快捷键方式如下。
@@ -107,7 +107,7 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 { "keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser"} }
 ```
 
-##配置Python编辑环境
+## 配置Python编辑环境
 
 - [SublimeTmpl](https://github.com/kairyou/SublimeTmpl)。Sublime Text 新建文件的模板插件。模板支持自定义 `attr`（在settings-user里设置）。
 - [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel)。为部分语言增强自动完成+成员/方法提示功能，包括了 Python 。这个插件同时也可以让你跳转到符号定义的地方，通过按住 alt 并点击符号。非常方便。支持所有Komodo Editor 支持的语言类型（需要自行配制）`JavaScript, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python3, XML, Sass, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.`此处仅介绍配置python.
@@ -122,17 +122,17 @@ Sublime Text 有一个Packages的管理插件，[Sublime Package Control](https:
 }
 ```
 
-##配置Java编辑环境
+## 配置Java编辑环境
 
-###前提
+### 前提
 
 JDK已经安装好，Java环境已配置好。
 
-###配置编译环境
+### 配置编译环境
 
 - 在%Sublime Text 安装目录`%/package/`中找到`Java.sublime-package`,用好压或者其他压缩软件打开(重命名为`rar`文件双击就可以打开)，在里面找到`JavaC.sublime-build`并打开。里面添加：
 
-```python
+``` python
 {
     "shell_cmd": "runJava.bat \"$file\"",
     "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
@@ -158,7 +158,7 @@ java %~n1
 
 - 写一个Hello world 测试代码，使用`Control + B`运行之。
 
-```java
+``` java
 public class test{
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -166,9 +166,9 @@ public class test{
 }
 ```
 
-##附录
+## 附录
 
-###BracketHighlighter配置
+### BracketHighlighter配置
 
 Bracket settings-User里的内容。
 

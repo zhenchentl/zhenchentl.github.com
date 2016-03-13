@@ -7,6 +7,9 @@ keywords: Sublime Text,开发环境
 description:
 ---
 
+* 目录
+{:toc}
+
 之前用过不少类型的代码/文本编辑器，能够一举解决我所有编辑需求的工具还真是少之又少。曾经坚持用了三个月的Vim，还整理了一份[vimrc在这](https://github.com/zhenchentl/dotvim)。但是Vim学习曲线实在太陡，爬不上去，只好转向这款号称“性感无比”的代码编辑器Sublime Text，又说“程序员必备神器”。一入手才发现，简直是相见恨晚。今天偷空写下我的配置心得，以飨各位看官。
 
 我个人喜欢Sublime Text的原因主要有四：跨Windows/Linux/Mac平台，轻量，安装插件方便，编辑体验极其流畅。平时的编辑需求包括，常规的文本编辑和浏览，用Markdown写文章，写Python和Java代码。接下来我也主要围绕这四类需求来简要介绍我的Sublime Text最基本的配置情况。

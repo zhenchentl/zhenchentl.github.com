@@ -7,7 +7,7 @@ keywords: Python Challenge,攻略
 description:
 ---
 
-###14
+### 14
 
 第十四关，面包圈应该是没什么用的，寓意在网页title已经显示了，`walk around`，第二个图下载下来居然是一个10000\*1的像素条，源码中给出了提示`remember: 100*100 = (100+99+99+98) + (...`，100\*100和10000应该是有关系的。联想到刚才那个面包圈，想着先横着100，再竖着99，再向左横着99，向上竖98，刚好就是一圈，这样一圈一圈下去就能把这个 10000\*1 的图给围成 100\*100的了。网上有有段比较精巧的代码来处理，只有一个循环，根据边界条件来改变坐标。得到的图片是一直猫，改URL为cat，进入新的页面得到猫的原图和提示`and its name is uzi. you'll hear from him later. `。于是得到`uzi`，这就是答案。同时，`you'll hear from him later`貌似给后面的题埋下了伏笔。
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
 第十五关URL：[http://www.pythonchallenge.com/pc/return/uzi.html](http://www.pythonchallenge.com/pc/return/uzi.html)
 
-###15
+### 15
 
 第十五关，是一张日历，圈出了1月26日这天，并且源码中提示`todo: buy flowers for tomorrow`，因此重点在1月27日，网页title提示是whom，猜测是与一个人有关，右下角显示2月有29天，因此这一年还是闰年，且年份开头为1，结尾为6。计算可得有`1976 1756 1576 1356 1176`，根据提示`he ain't the youngest, he is the second`得知应该是1756年，百度下1756年1月27日是奥地利音乐大师莫扎特的生日，得到`mozart`，这就是答案。
 
@@ -55,7 +55,7 @@ for year in xrange(1996,1000,-20):
 
 第十六关URL：[http://www.pythonchallenge.com/pc/return/mozart.html](http://www.pythonchallenge.com/pc/return/mozart.html)
 
-###16
+### 16
 
 第十六关，还需要登陆，试了下用户名和密码分别还是`huge`和`file`。得到的提示图片充满噪点，而中间有看上去等长的红线，仔细观察发现，每一像素行只有一条红线，由网页title的提示`let me get this straight`猜测，应该是把红线对其成一条线。由第一段代码获取红线的颜色值为195，最后得到的图中有`romance`，这就是答案。
 
@@ -90,7 +90,7 @@ im.save('result.png')
 
 第十七关URL：[http://www.pythonchallenge.com/pc/return/romance.html](http://www.pythonchallenge.com/pc/return/romance.html)
 
-###17
+### 17
 
 第十七关，这一关实在复杂，根据图片提示看到cookie后，`info=you+should+have+followed+busynothing…`，剩下的完全查网上攻略了。左下角图片曾经出现在第四关，发现第四关的cookie也是busynothing这句话，把url改一下http://www.pythonchallenge.com/pc/def/linkedlist.php?busynothing=12345 看看发生了什么。Response cookie出现了值，是一个字母，然后当你继续访问的时候，字母在变，于是收集这些值。得到
 
@@ -142,7 +142,7 @@ print opener.open('http://www.pythonchallenge.com/pc/stuff/violin.php').read()
 
 第十八关URL：[http://www.pythonchallenge.com/pc/return/balloons.html](http://www.pythonchallenge.com/pc/return/balloons.html)
 
-###18
+### 18
 
 第十八关，寻找两幅图的不同，源码提示`it is more obvious that what you might think`，最明显的不同是什么？亮度，URL改成brightness，发现源码提示有`maybe consider deltas.gz`，又是一个压缩包，[下载下来](http://www.pythonchallenge.com/pc/return/deltas.gz)是一个txt文件，里面一堆16进制数，分成两列。而且左右两侧大部分相同，只有个别行是左边有右边没有，或者右边有左边没有。网上找到一个库，difflib，这个库的作用就是用来找差异的。输入两个片段，然后逐行比较，将差异分为三个类型，两个片段都有，只有第一个片段有和只有第二个片段有。文件的开始是`89 50 4e 47 0d 0a 1a 0a 00`，这里存储的是图片格式，即png格式的，因此，思路是，把deltas文件分成三份，把16进制转换成二进制，每份表示一个图片，得到`../hex/bin.html`，`butter`，`fly`，这就是答案。
 
@@ -177,7 +177,7 @@ pic3.close()
 
 第十九关URL：[http://www.pythonchallenge.com/pc/hex/bin.html](http://www.pythonchallenge.com/pc/hex/bin.html)，这关的登陆用户名为butter，密码fly。
 
-###19
+### 19
 
 第十九关，源码注释给出了一封邮件，附件名称是indian.wav，因此，附件应该是base64编码过的wav音频文件，解码即可。但是得到的音频里说sorry，用sorry替换URL得到提示`what are you apologizing for?`。考虑到提示图片大海和陆地颜色反转了，尝试将音频每一帧反转，得到一句话：`you are an idiot`，idiot就是答案。
 
@@ -200,7 +200,7 @@ wo.close()
 
 第二十关URL：[http://www.pythonchallenge.com/pc/hex/idiot.html](http://www.pythonchallenge.com/pc/hex/idiot.html)
 
-###20
+### 20
 
 第二十关，完全无头绪，按照网上前辈攻略来。图片的响应头信息有这么一段`Content-Range bytes 0-30202/2123456789`，在headers加上Range，改变请求范围试试，从30203开始，返回的content-range有改变，继续循环，最后得到一系列输出。如下：
 

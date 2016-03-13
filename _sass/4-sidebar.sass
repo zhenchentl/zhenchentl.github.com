@@ -168,9 +168,6 @@
   color: $toc-color
   overflow: hidden
   outline: none
-  &:hover {
-    background: rgba(43, 181, 92, 0.9);
-    color: #fff; }
   &:before
     position: absolute
     top: 2px
@@ -183,3 +180,6 @@
     transition: transform .15s linear
   &:visited:before
     color: $toc-bullet-read
+  &:hover
+    background: rgba(43, 181, 92, 0.9)
+    color: #fff

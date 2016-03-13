@@ -98,21 +98,22 @@
 #search-box
   position: relative
   height: $search-box-height
-  &:before
-    @extend %icon
-    @extend %icon-search
-    position: absolute
-    top: 0
-    right: 15px
-    z-index: -1
-    font-size: 24px
-    line-height: $search-box-height
-    color: $search-box-placeholder
+  / &:before
+  /   @extend %icon
+  /   @extend %icon-search
+  /   position: absolute
+  /   top: 0
+  /   right: 15px
+  /   z-index: -1
+  /   font-size: 24px
+  /   line-height: $search-box-height
+  /   color: $search-box-placeholder
 
 
 #search-input
   width: 100%
   height: 100%
+  text-align: center
   padding: 20px 45px 20px 15px
   font-size: $search-box-font-size
   line-height: $search-box-height - 20px * 2

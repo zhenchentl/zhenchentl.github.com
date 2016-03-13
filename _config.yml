@@ -1,6 +1,6 @@
 # Site settings
 title: Damon Chen
-email: "&#104;&#105;&#064;&#112;&#101;&#105;&#119;&#101;&#110;&#046;&#108;&#117;"
+email: "damon@zhenchen.me"
 description: "Damon Chen 的博客"
 baseurl: ""
 url: "http://www.zhenchen.me"
@@ -9,7 +9,7 @@ permalink: /:year/:title
 
 # Social account
 # twitter:  PeiwenLu
-# weibo:    2509911980
+weibo:    2509911980
 github:   zhenchentl
 # codepen:  P233
 # dribbble: username

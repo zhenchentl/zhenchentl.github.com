@@ -211,7 +211,7 @@ while 1:
     ok, invader. you are inside now.
 
 又试试从2123456789开始，打印出`esrever ni emankcin wen ruoy si drowssap eht`，其实需要反过来读，`print 'esrever ni emankcin wen ruoy si drowssap eht'[::-1]`得到`the password is your new nickname in reverse`。那么，invader是我的nickname？密码就是redavni。从2123456789开始总是得到`2123456744-2123456788/2123456789`，又看到and it is hiding at 1152983631 .跟之前的信息不一样了，手动把start改为1152983631试试，打印出pk etx eot的字样，放狗搜索得知这是zip file的格式，也想明白了那个密码是zipfile的密码。从1152983631到2123456789是不成功的，while循环打印出bytes 1152983631-1153223363/2123456789，于是要从1152983631读到1153223363。
-```
+~~~~ python
 import urllib2,base64
 url = 'http://www.pythonchallenge.com/pc/hex/unreal.jpg'
 start = 1152983631
@@ -224,7 +224,7 @@ while 1:
     with open('Challenge20.zip','wb') as f:
         f.write(content)
     break
-```
+~~~~
 获得zipfile，输入redavni，读到文本内容.
 ```
 Yes! This is really level 21 in here.

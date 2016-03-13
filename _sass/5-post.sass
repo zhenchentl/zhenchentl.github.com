@@ -3,6 +3,14 @@
   float: right
   width: calc(100% - #{$sidebar-width})
   height: 100%
+  ::selection
+    color: white
+    background: #33caa6
+    text-shadow: none
+  ::-moz-selection
+    color: white
+    background: #33caa6
+    text-shadow: none
   overflow: auto
   -webkit-overflow-scrolling: touch
   transition: width .35s $time-function
@@ -32,10 +40,6 @@ h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6
   font-size: $post-font-size
   line-height: $post-line-height
   text-shadow: 0 0 0 #fff
-  &:selection
-    color: white
-    background: #33caa6
-    text-shadow: none
 
   &-title
     margin: 0 0 $post-paragraph-spacing * .75

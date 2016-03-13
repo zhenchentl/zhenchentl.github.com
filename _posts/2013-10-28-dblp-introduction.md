@@ -36,14 +36,14 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 **请求格式**：倒数第二个参数是姓的首字母。倒数第一个参数是姓：名。（老外名字也是，Harry Potter,请求参数为`p/Potter:Harry`）
 **返回格式**：
 
-{% highlight XML %}
+```
 <coauthors author="Jie Tang" urlpt="t/Tang:Jie">
     <author urlpt="a/Abbeel:Pieter" count="4">Pieter Abbeel</author>
     <author urlpt="a/Aberer:Karl" count="1">Karl Aberer</author>
     <author urlpt="a/Anderson:Steven_J=" count="1">Steven J. Anderson</author>
     ...
 </coauthors>
-{% endhighlight %}
+```
 
 注意：urlpt是DBLP用来标识唯一作者的。第二级节点包括合作者的urlpt和合作数目。
 
@@ -52,7 +52,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 `http://dblp.uni-trier.de/rec/bibtex/journals/dke/TangCKW13.xml`（不好意思又是唐老师大作）。
 **返回格式**：
 
-{% highlight XML %}
+```
 <dblp>
     <article key="journals/dke/TangCKW13" mdate="2013-10-17">
     <author>Jie Tang</author>
@@ -70,7 +70,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
     <url>db/journals/dke/dke87.html#TangCKW13</url>
     </article>
 </dblp>
-{% endhighlight %}
+```
 
 注意：`article`的key唯一标识该文章，`journals`表示期刊，`dke`表示期刊名，（一般是期刊名首字母）
 其他字段很明显了，不解释。
@@ -79,7 +79,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 **请求格式**：author或者xauthor后面加搜索内容
 **返回格式**：模糊匹配到的作者列表
 
-{% highlight XML %}
+```
 <authors>
     <author urlpt="=/=Fayuan=:Kuo=Ming_Tang">Kuo-Ming Tang (Fayuan)</author>
     <author urlpt="b/Basar:Tang=uuml=l_=Uuml==">Tangül Ü. Basar</author>
@@ -89,13 +89,13 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
     <author urlpt="b/Boyland:John_Tang">John Tang Boyland</author>
     ...
 </authors>
-{% endhighlight %}
+```
 
 - **搜索某作者所有论文**：`http://dblp.uni-trier.de/pers/xk/urlpt`
 **请求格式**：`http://dblp.uni-trier.de/pers/xk/t/Tang:Jie`
 **返回格式**：文章列表。给出的是`dblpkey`，即论文在DBLP中的唯一标识。
 
-{% highlight XML %}
+```
 <dblpperson name="Jie Tang">
     <dblpkey type="person record">homepages/t/JieTang</dblpkey>
     <dblpkey>journals/dke/TangCKW13</dblpkey>
@@ -106,7 +106,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
     <dblpkey>journals/kbs/WangLZST13</dblpkey>
     ...
 </dblpperson>
-{% endhighlight %}
+```
 
 ### DBLP可下载数据集
 
@@ -127,8 +127,7 @@ DBLP数据文件1G多。假如不需要所有数据或者对获取数据速度�
 
 sax是一个基于事件流的xml解析工具，边读文件边解析，好处是无内存限制，可以解析处理较大的xml文件。其代码如下。
 
-
-{% highlight python %}
+```
 from xml.sax import handler, make_parser
 paperTag = ('article','inproceedings','proceedings','book',
                    'incollection','phdthesis','mastersthesis','www')
@@ -153,7 +152,7 @@ class mHandler(handler.ContentHandler):
         f.close()
     if __name__ == '__name__':
     parserDblpXml()
-{% endhighlight %}
+```
 
 ### 简单总结
 

@@ -7,6 +7,9 @@ keywords: Python Challenge,攻略
 description:
 ---
 
+* 目录
+{:toc}
+
 ### 7
 
 第七关，这个图片有点奇怪，中间的黑白条像是蕴含了一些信息，应该是用到了图像处理的东西。依旧是窃取前人指点，Python有一个第三方库PIL（python image library），其中的Image可以用在这处理图像。下载oxygen.png这个图像，用GIMP打开可以发现黑白条的坐标起止，同时每个像素格宽度为7。由`im.mode`知道，这个图片模式是RGBA的。RGBA的值是(x,x,x,255)的形式，取R, B, G值都行，这里用的R值。换算换成ASCII得到`smart guy, you made it. the next level is [105, 110, 116, 101, 103, 114, 105, 116, 121]`，再将这里的数字换成ASCII得到`integrity`。这就是答案。

@@ -7,10 +7,13 @@ keywords: Android
 description:
 ---
 
+* 目录
+{:toc}
+
 一直想找些Android经典的开源项目学习一下，大健发现了这么一篇帖子，不少好东西，分享在此。希望能够对[Android开发](http://android.eoe.cn/)的同学有所帮助。感谢作者的整理和分享。[tisa007](http://my.eoe.cn/123581)
 原帖在[这里。](http://www.eoeandroid.com/thread-272453-1-1.html)
 
-###项目篇：
+### 项目篇：
 - [Apollo音乐播放器](https://github.com/Splitter/android_packages_apps_apolloMod)：就一个播放器，但是实现的很好
 - [oschina客户端](https://github.com/oschina/android-app)：oschina网站的客户端哦，wp版，iOS版都有开源
 - [xabber实时聊天工具（基于xmpp协议）](https://github.com/redsolution/xabber-android)：不评价了，反正算是同类中比较好的了
@@ -18,7 +21,7 @@ description:
 - [Google IO](https://code.google.com/p/iosched/)：谷歌开发者大会应用，虽然有点难懂，还是很有参考价值（比如其中的图片加载）
 - [eoe客户端](https://github.com/eoecn/android-app/)：eoe网站Android客户端也开源咯，嘿嘿
 
-###组件篇：
+### 件篇：
 - [Android-Flip](https://github.com/openaphid/android-flip)：可以实现类似FlipBoard那种华丽丽的翻页
 - [Drag-Sort-Listview](https://github.com/bauerca/drag-sort-listview)：可以拖动item重新排序的listview，效果非常赞
 - [HoloEveryWhere](https://github.com/Prototik/HoloEverywhere)：咳咳，有些同学非常喜欢Android的holo风格，这个项目绝对让你happy
@@ -40,7 +43,7 @@ description:
 - [chromeview](https://github.com/pwnall/chromeview)：我们都知道webview，也知道Android的chrome又自己的内核，这个项目就是把chrome的内核给导出来做成一个chromeview了，大家可以在自己的项目里用，有兴趣的可以玩玩
 - [picasso](https://github.com/square/picasso)：来自square的图片异步加载，好像是最近才开源的，API风格很独特，哥很喜欢~
 
-###顺便推荐大家几个网站：
+### 顺便推荐大家几个网站：
 
 - [github](https://github.com/)：各种项目很多，就是不容易挖掘，但是开发者必备
 - [oschina](http://www.oschina.net/)：曾经一般，现在越做越好了，很多开源项目；

@@ -158,6 +158,10 @@
   overflow: hidden
   outline: none
   &:before
+    position: absolute
+    top: 7px
+    left: 12px
+    z-index: 1
     width: .75em
     height: .75em
     margin-right: 5px
@@ -165,11 +169,9 @@
     border: 2px solid #9aa4af
     border-radius: 50%
     display: inline-block
-    -webkit-transition: border-color .35s
-    -moz-transition: border-color .35s
-    -ms-transition: border-color .35s
-    -o-transition: border-color .35s
-    transition: border-color .35s
+    font-size: $toc-bullet-size
+    color: $toc-bullet-unread
+    transition: transform .15s linear
   &:visited:before
     color: $toc-bullet-read
   &:hover

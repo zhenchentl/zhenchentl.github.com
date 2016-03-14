@@ -21,7 +21,7 @@ description:
 - [Google IO](https://code.google.com/p/iosched/)：谷歌开发者大会应用，虽然有点难懂，还是很有参考价值（比如其中的图片加载）
 - [eoe客户端](https://github.com/eoecn/android-app/)：eoe网站Android客户端也开源咯，嘿嘿
 
-### 件篇：
+### 软件篇：
 - [Android-Flip](https://github.com/openaphid/android-flip)：可以实现类似FlipBoard那种华丽丽的翻页
 - [Drag-Sort-Listview](https://github.com/bauerca/drag-sort-listview)：可以拖动item重新排序的listview，效果非常赞
 - [HoloEveryWhere](https://github.com/Prototik/HoloEverywhere)：咳咳，有些同学非常喜欢Android的holo风格，这个项目绝对让你happy

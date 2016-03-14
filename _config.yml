@@ -16,11 +16,11 @@ github:   zhenchentl
 
 
 # Comment
-disqus_shortname: MarkChenTL
+disqus_shortname: markchen
 
 
 # Google Analytics
-# google_analytics: UA-60830414-1
+google_analytics: UA-75071383-1
 
 
 # Build settings
@@ -30,4 +30,3 @@ sass:
 gems:
   - jekyll-sitemap
 
-# filter: category

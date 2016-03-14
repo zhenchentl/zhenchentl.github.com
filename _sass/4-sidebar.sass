@@ -82,6 +82,7 @@
   line-height: $tag-height
   text-align: center
   color: $tag-color
+  border-top: 1px solid $$tag-borfer-top-color;
   border-bottom: 1px solid $tag-border-color
   transition: color .15s linear, box-shadow .3s $time-function
   cursor: pointer
@@ -166,7 +167,7 @@
     background: #fafafa
   &:visited:hover > .toc__circle
     background: rgba(242, 242, 242, 0.5)
-  &.active
+  &:active
     color: #29a284
     background: rgba(242, 242, 242, 0.5)
     box-shadow: -1px 1px rgba(229, 232, 236, 0.9)

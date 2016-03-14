@@ -147,7 +147,7 @@
   position: relative
   float: left
   clear: both
-  padding: 5px 15px 5px 32px
+  padding: 5px 15px 5px 15px
   width: 100%
   font-size: $toc-font-size
   line-height: $toc-line-height
@@ -160,12 +160,22 @@
   &:hover
     background: rgba(43, 181, 92, 0.9)
     color: #fff
+  &:visited > .toc__circle
+    background: #fafafa
+  &:visited:hover > .toc__circle
+    background: rgba(242, 242, 242, 0.5)
+  &.active
+    color: #29a284
+    background: rgba(242, 242, 242, 0.5)
+    box-shadow: -1px 1px rgba(229, 232, 236, 0.9)
+  &.active > .pl__circle
+    background: rgba(242, 242, 242, 0.5)
+    border-color: #29a284
 
 .toc__circle
   width: .75em
   height: .75em
   margin-right: 5px
-  background: $toc-bullet-unread
   border: 2px solid #9aa4af
   border-radius: 50%
   display: inline-block
